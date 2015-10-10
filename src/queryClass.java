@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
+import java.util.Set;
 
 import org.apache.jena.atlas.iterator.Iter;
 import org.apache.jena.iri.impl.Force;
@@ -47,6 +48,7 @@ public queryClass() throws FileNotFoundException{
 		List<ArrayList<String>> genre=new ArrayList<ArrayList<String>>();
 		ArrayList<String> mb=new ArrayList<String>();
 		  Map<String,String> movies=new HashMap<>();
+		  
 		String[] filmbook={"adventure film","wd:Q319221"};
 		 
  		ArrayList<String[]> matrix=new ArrayList<String[]>();
@@ -70,7 +72,7 @@ public queryClass() throws FileNotFoundException{
 	
 	String abc[]=wikiLink.split("http://wikidata.org/entity/");
 //	System.out.println(abc[1]);	
-	String queryString3=" PREFIX wd: <http://www.wikidata.org/entity/> " +
+	String queryString4=" PREFIX wd: <http://www.wikidata.org/entity/> " +
 			"PREFIX sc: <http://schema.org/>" +
 			"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
 			"PREFIX wdt: <http://www.wikidata.org/prop/direct/>" +
@@ -79,13 +81,48 @@ public queryClass() throws FileNotFoundException{
 					"rdfs:label ?moviename ." +
 		         	"FILTER (LANG(?moviename)= 'en' )" +
 
-					"?fgenre wd:P31c* ?genreins  ." +
+					"?fgenre (wd:P31c|wd:P279c)* ?genreins  ." +
 					"?genreins wd:P31c wd:Q201658 ." +
 					"?genreins  rdfs:label ?genreinstance ." +
 		         	"FILTER (LANG(?genreinstance)= 'en' )" 
 		  +"}" +
 		  "group by ?moviename";
-		
+		String queryString3="PREFIX wd: <http://www.wikidata.org/entity/> " +
+			"PREFIX sc: <http://schema.org/>" +
+			"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
+			"PREFIX wdt: <http://www.wikidata.org/prop/direct/>" +
+			"SELECT  distinct (STR(?moviename) AS ?movie) (group_concat(?genreinstance ; separator = ':') AS ?genre) (group_concat(?genreinstance1 ; separator = ':') AS ?genre1) WHERE {" +
+ 			"wd:"+abc[1]+" wd:P136c ?fgenre,?fgenre1  ;" +
+					"rdfs:label ?moviename ." +
+		         	"FILTER (LANG(?moviename)= 'en' )" +
+		         	"OPTIONAL{"+
+					"?fgenre (wd:P31c|wd:P279c)* ?genreins  ." +
+					"?genreins wd:P31c wd:Q201658 ." +
+					"?genreins  rdfs:label ?genreinstance ." +
+		         	"FILTER (LANG(?genreinstance)= 'en' )" 
+		         	+"}" +
+		         	"OPTIONAL{"+
+					"?fgenre1 (wd:P31c|wd:P279c)* ?genreins1  ." +
+					"?genreins1 wd:P31c wd:Q223393 ." +
+					"?genreins1  rdfs:label ?genreinstance1 ." +
+		         	"FILTER (LANG(?genreinstance1)= 'en' )" 
+		         	+"}" +
+//"OPTIONAL{"+
+//
+//  "  ?fgenre (wd:P31c|wd:P279c)* ?genreins  . "+
+//  "  ?genreins wd:P31c wd:Q201658 ."+
+//  "  ?genreins  rdfs:label ?genreinstance ."+
+//  "  FILTER (LANG(?genreinstance)= 'en' )" +
+//  "}" +
+  
+//  "OPTIONAL{"+
+//  "  ?fgenre1  (wd:P31c|wd:P279c)* ?genreins1  ."+ 
+//  "  ?genreins1 wd:P31c wd:Q223393 ."+
+//  "  ?genreins1  rdfs:label ?genreinstance1 ."+ 
+//"	FILTER (LANG(?genreinstance1)= 'en' ) " +
+//"} "+	
+		"}"+
+		"group by ?moviename";
  		String service2="http://lod.openlinksw.com/sparql"	;
 	service2="http://dbpedia.org/sparql";
 		Query query2 = QueryFactory.create(queryString3);
@@ -100,11 +137,14 @@ String[] genreArray;
 		for ( ; results2.hasNext() ; ) {
 			
 		   QuerySolution soln1 = results2.nextSolution() ;
-//		 System.out.println("***"+  soln1.getLiteral("?movie")+"   "+soln1.get("?genre"));
+	 System.out.println("***"+  soln1.getLiteral("?movie")+"   "+soln1.get("?genre")+"   "+soln1.get("?genre"));
 		   movieResult=soln1.getLiteral("?movie").toString().toLowerCase();
 		 genreResult= soln1.get("?genre").toString().toLowerCase();
+		genreResult =genreResult.concat(":"+soln1.get("?genre1").toString().toLowerCase());
 		genreArray= genreResult.split(":");
  String text="";
+	Set<String> duplicates=new HashSet<>();
+
 		for(String element:genreArray){
 
 			if(element.contains("film")||element.contains("genre")||element.contains("movie")){
@@ -113,11 +153,16 @@ String[] genreArray;
 				element=element.replace("movie", "");
 				element=element.trim();
 			}
+			element=element.trim();
 			element=element.replace(" ", "_");
- 			text=text.concat(element+" ");
+			duplicates.add(element);
+ 			
 		}
-		  System.out.println(text);
-		
+		Iterator itr=duplicates.iterator();
+		for(;itr.hasNext();)
+		text=text.concat(itr.next()+" ");  
+		System.out.println("*******Cleaned *****"+text);
+	 
 		  movies.put(movieResult, text);
 		
 //		String array2[]={"comedy","romance","thriller","science fiction"};
