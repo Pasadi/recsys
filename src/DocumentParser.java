@@ -5,10 +5,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 /**
  * Class to read documents
@@ -18,11 +20,12 @@ import java.util.Map.Entry;
 public class DocumentParser {
 
     //This variable will hold all terms of each document in an array.
-    private List termsDocsArray = new ArrayList<>();
+    private List<String[]> termsDocsArray = new ArrayList<>();
     private List allTerms = new ArrayList<>(); //to hold all terms
     private List tfidfDocsVector = new ArrayList<>();
-
-    /**
+    private Map<String,List> reference=new HashMap<>();
+ private List<Movie> reference1=new ArrayList<>();
+     /**
      * Method to read files and store in array.
      * @param filePath : source file path
      * @throws FileNotFoundException
@@ -45,7 +48,7 @@ public class DocumentParser {
 //                        allTerms.add(term);
 //                    }
 //                }
-//                termsDocsArray.add(tokenizedTerms);
+//              termsDocsArray.add(tokenizedTerms);
 //            }
 //        }
 //
@@ -62,21 +65,48 @@ public class DocumentParser {
                 }
                 termsDocsArray.add(tokenizedTerms);
             
+               Movie m=new Movie();
+               m.setMovieName(entry.getKey());
+               m.setMovieTerms(tokenizedTerms);
+               reference1.add(m);
+                
         }
 
     }
 
     /**
      * Method to create termVector according to its tfidf score.
-     */
+     */ public void tfIdfCalculatorMy() {
+    	  double tf; //term frequency
+          double idf; //inverse document frequency
+          double tfidf; //term requency inverse document frequency    
+          for(Movie m:reference1){
+        	  String[] docTermsArray=m.getMovieTerms();
+        	  double[] tfidfvectors = new double[allTerms.size()];
+              int count = 0;
+              Iterator<String> itr=allTerms.iterator();
+              while(itr.hasNext()){
+            	  String terms=itr.next();
+            	   
+            	  tf = new TfIdf().tfCalculator(docTermsArray, terms);
+                  idf = new TfIdf().idfCalculator(termsDocsArray, terms);
+                  tfidf = tf * idf;
+                  tfidfvectors[count] = tfidf;
+                  count++;
+              }
+              m.setTfVector(tfidfvectors);
+          }
+    	 
+     }
     public void tfIdfCalculator() {
         double tf; //term frequency
         double idf; //inverse document frequency
         double tfidf; //term requency inverse document frequency        
         Iterator<String[]>  it = termsDocsArray.iterator();
-        int i=0;
+         int i=0;
         while(it.hasNext()) {
           String[] docTermsArray  = it.next();
+          
           System.out.println("Printing terms in document no: "+i+"  "+Arrays.toString(docTermsArray));
           i++;
           double[] tfidfvectors = new double[allTerms.size()];
@@ -91,8 +121,17 @@ public class DocumentParser {
               tfidfvectors[count] = tfidf;
               count++;
           }
-          tfidfDocsVector.add(tfidfvectors);  //storing document vectors;            
-          System.out.println("tf idf vectos of this doc is: "+Arrays.toString(tfidfvectors));
+          tfidfDocsVector.add(tfidfvectors);  //storing document vectors; 
+        for(Movie m: reference1){
+        	if(m.movieTerms.equals(docTermsArray)){
+        		m.tfVector=tfidfvectors;
+        	}
+        	System.out.println(m.getMovieName()+m.getMovieTerms()+m.getTfVector());
+        	        }
+        
+        
+          //System.out.println("tf idf vectos of this doc is: "+Arrays.toString(tfidfvectors));
+           
         }
 //        for (String[] docTermsArray : termsDocsArray) {
 //            double[] tfidfvectors = new double[allTerms.size()];
@@ -127,8 +166,29 @@ public class DocumentParser {
 //                                  );
             	}
             }
-            System.out.println("Overall Similarity of "+i+" : "+overallSimilarity);
+            System.out.println("********************Overall Similarity of "+i+" : "+overallSimilarity);
         }
     }
-   
+    public void getCosineSimilarityMy() {
+    	double overallSimilarity=0.0;
+    	int count=0;
+    	for(Movie m: reference1){
+    		count++;
+        	overallSimilarity=0.0;
+    		for(Movie j:reference1){
+    			if(!m.getMovieName().equals(j.getMovieName())){
+    				
+                	overallSimilarity+=new CosineSimilarity().cosineSimilarity(m.getTfVector(),j.getTfVector());
+
+    				
+    			}
+    		}
+    		m.setSimilarity(overallSimilarity/count);
+            System.out.println("#############################Overall Similarity of "+m.getMovieName()+" : "+overallSimilarity);
+
+    		
+    		
+    		
+    	}
+    }
 }

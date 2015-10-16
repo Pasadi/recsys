@@ -143,7 +143,7 @@ String[] genreArray;
 		genreResult =genreResult.concat(":"+soln1.get("?genre1").toString().toLowerCase());
 		genreArray= genreResult.split(":");
  String text="";
-	Set<String> duplicates=new HashSet<>();
+	Set<String> duplicates=new HashSet<>();//remove duplicates
 
 		for(String element:genreArray){
 
@@ -177,8 +177,8 @@ String[] genreArray;
 		Cosine_Similarity cs=new Cosine_Similarity();
 		DocumentParser dp=new DocumentParser();
 		dp.parseMap(movies);
-		dp.tfIdfCalculator(); //calculates tfidf
-	    dp.getCosineSimilarity(); //calculates cosine similarity   
+		dp.tfIdfCalculatorMy(); //calculates tfidf
+	    dp.getCosineSimilarityMy(); //calculates cosine similarity   
 	
 	//	createItemVector(movieResult,movieGenre);
 //  	}
