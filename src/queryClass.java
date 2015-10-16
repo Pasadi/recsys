@@ -29,6 +29,7 @@ public class queryClass {
 	static List genresList;
 	static List<Map<String,ArrayList<Integer>>> profile=new ArrayList<Map<String,ArrayList<Integer>>>();
 	static Map<String, ArrayList<Integer>> bookVector= new HashMap<String, ArrayList<Integer>>(10000);
+	static List<Movie> userProfile=new ArrayList<>();
 
 public queryClass() throws FileNotFoundException{
 	System.out.println("constructor");
@@ -107,20 +108,6 @@ public queryClass() throws FileNotFoundException{
 					"?genreins1  rdfs:label ?genreinstance1 ." +
 		         	"FILTER (LANG(?genreinstance1)= 'en' )" 
 		         	+"}" +
-//"OPTIONAL{"+
-//
-//  "  ?fgenre (wd:P31c|wd:P279c)* ?genreins  . "+
-//  "  ?genreins wd:P31c wd:Q201658 ."+
-//  "  ?genreins  rdfs:label ?genreinstance ."+
-//  "  FILTER (LANG(?genreinstance)= 'en' )" +
-//  "}" +
-  
-//  "OPTIONAL{"+
-//  "  ?fgenre1  (wd:P31c|wd:P279c)* ?genreins1  ."+ 
-//  "  ?genreins1 wd:P31c wd:Q223393 ."+
-//  "  ?genreins1  rdfs:label ?genreinstance1 ."+ 
-//"	FILTER (LANG(?genreinstance1)= 'en' ) " +
-//"} "+	
 		"}"+
 		"group by ?moviename";
  		String service2="http://lod.openlinksw.com/sparql"	;
@@ -163,7 +150,7 @@ String[] genreArray;
 		text=text.concat(itr.next()+" ");  
 		System.out.println("*******Cleaned *****"+text);
 	 
-		  movies.put(movieResult, text);
+		  movies.put(abc[1], text);
 		
 //		String array2[]={"comedy","romance","thriller","science fiction"};
 //		for(String myarr:array1){
@@ -179,6 +166,37 @@ String[] genreArray;
 		dp.parseMap(movies);
 		dp.tfIdfCalculatorMy(); //calculates tfidf
 	    dp.getCosineSimilarityMy(); //calculates cosine similarity   
+	    userProfile=dp.createUserProfile();
+	    for(Movie m:userProfile){
+	    	
+	    	String queryString3="PREFIX wd: <http://www.wikidata.org/entity/> " +
+	    			"PREFIX sc: <http://schema.org/>" +
+	    			"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
+	    			"PREFIX wdt: <http://www.wikidata.org/prop/direct/>" +
+	    			"SELECT  distinct (STR(?moviename) AS ?movie) (group_concat(?genreinstance ; separator = ':') AS ?genre) (group_concat(?genreinstance1 ; separator = ':') AS ?genre1) WHERE {" +
+	     			"wd:"+m.getMovieName()+" wd:P136c ?fgenre,?fgenre1  ;" +
+	    					"rdfs:label ?moviename ." +
+	    		         	"FILTER (LANG(?moviename)= 'en' )" +
+	    		         	"OPTIONAL{"+
+	    					"?fgenre (wd:P31c|wd:P279c)* ?genreins  ." +
+	    					"?genreins wd:P31c wd:Q201658 ." +
+	    					"?genreins  rdfs:label ?genreinstance ." +
+	    		         	"FILTER (LANG(?genreinstance)= 'en' )" 
+	    		         	+"}" +
+	    		         	"OPTIONAL{"+
+	    					"?fgenre1 (wd:P31c|wd:P279c)* ?genreins1  ." +
+	    					"?genreins1 wd:P31c wd:Q223393 ." +
+	    					"?genreins1  rdfs:label ?genreinstance1 ." +
+	    		         	"FILTER (LANG(?genreinstance1)= 'en' )" 
+	    		         	+"}" +
+	    		"}"+
+	    		"group by ?moviename";
+	    	
+	    	
+	    	
+	    	
+	    	
+	    }
 	
 	//	createItemVector(movieResult,movieGenre);
 //  	}
@@ -279,7 +297,11 @@ String[] genreArray;
 //
 //  	}
  	}
-//		 
+//	
+	public static void retrieveBooks(){
+		
+		
+	}
 	public static List createInitialVector() throws FileNotFoundException{
 		List<String> genres=new ArrayList<String>();
 		File f=new File("genres.txt");
