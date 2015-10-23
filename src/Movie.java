@@ -4,6 +4,21 @@ public class Movie {
 	String[] movieTerms;
 	double similarity;
 	double[] tfVector;
+	double[] tfVectorAuthor;
+
+	public double[] getTfVectorAuthor() {
+		return tfVectorAuthor;
+	}
+	public void setTfVectorAuthor(double[] tfVectorAuthor) {
+		this.tfVectorAuthor = tfVectorAuthor;
+	}
+	String[] authors;
+	public String[] getAuthors() {
+		return authors;
+	}
+	public void setAuthors(String[] authors) {
+		this.authors = authors;
+	}
 	public double[] getTfVector() {
 		return tfVector;
 	}

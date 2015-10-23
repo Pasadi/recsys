@@ -1254,7 +1254,6 @@ http://wikidata.org/entity/Q696006
 http://wikidata.org/entity/Q583328
 http://wikidata.org/entity/Q1052859
 http://wikidata.org/entity/Q1687429
-*888************************************************************
 http://wikidata.org/entity/Q2107910
 http://wikidata.org/entity/Q9204
 http://wikidata.org/entity/Q7718600
@@ -1546,7 +1545,6 @@ http://wikidata.org/entity/Q3017787
 http://wikidata.org/entity/Q2089703
 http://wikidata.org/entity/Q5073797
 http://wikidata.org/entity/Q775328
-**********************************************************
 http://wikidata.org/entity/Q1214621
 http://wikidata.org/entity/Q2337685
 http://wikidata.org/entity/Q2564039
@@ -2788,7 +2786,6 @@ http://wikidata.org/entity/Q5557220
 http://wikidata.org/entity/Q1419294
 http://wikidata.org/entity/Q5501161
 http://wikidata.org/entity/Q979884
-******************************************************
 http://wikidata.org/entity/Q4928183
 http://wikidata.org/entity/Q4227192
 http://wikidata.org/entity/Q6827852

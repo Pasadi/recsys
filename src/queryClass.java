@@ -1,11 +1,18 @@
  import java.io.BufferedReader;
+import java.util.Collections;
+
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -30,56 +37,55 @@ public class queryClass {
 	static List<Map<String,ArrayList<Integer>>> profile=new ArrayList<Map<String,ArrayList<Integer>>>();
 	static Map<String, ArrayList<Integer>> bookVector= new HashMap<String, ArrayList<Integer>>(10000);
 	static List<Movie> userProfile=new ArrayList<>();
+	 static List<Book> bookData=new ArrayList<>();
+		static List<Book> Recommendations=new ArrayList<>();
 
 public queryClass() throws FileNotFoundException{
 	System.out.println("constructor");
 	
 }
 	/**
+	 * @param dbLinks 
 	 * @param args
+	 * @return 
 	 * @throws IOException 
 	 */
-	public static void main(String[] args) throws IOException {
+	public static List<Book> process(List<String> dbLinks ) throws IOException {
 		// TODO Auto-generated method stub
-		genresList=createInitialVector();
+	 
 		String service = "http://dbpedia.org/sparql";
-		String queryString = "";
-		File file=new File("movies.txt");
-		Scanner data=new Scanner(file);
-		List<ArrayList<String>> genre=new ArrayList<ArrayList<String>>();
-		ArrayList<String> mb=new ArrayList<String>();
-		  Map<String,String> movies=new HashMap<>();
-		  
-		String[] filmbook={"adventure film","wd:Q319221"};
-		 
- 		ArrayList<String[]> matrix=new ArrayList<String[]>();
-		List list=new ArrayList();
-		String line = null;
-		while(data.hasNext()){
-			line=data.nextLine();
- 		
-	String queryString1="prefix owl: <http://www.w3.org/2002/07/owl#>" +
+ 	//	File file=new File("movies.txt");
+	//	Scanner data=new Scanner(file);
+     	Map<String,String> movies=new HashMap<>();
+       // String line = null;
+		for(String line:dbLinks){
+	//		line=data.nextLine();
+        String queryString1="prefix owl: <http://www.w3.org/2002/07/owl#>" +
 			"SELECT ?link  WHERE {" +
 		    "<" +line+ "> owl:sameAs ?link ." +
 			"FILTER(contains(str(?link),'wikidata.org'))}";
 	 String wikiLink="";
 	Query query = QueryFactory.create(queryString1);
 	QueryEngineHTTP qexec = QueryExecutionFactory.createServiceRequest(service, query);
-	ResultSet results = qexec.execSelect();
+ 	ResultSet results = qexec.execSelect();
+ 	 System.out.println("************");
  	for ( ; results.hasNext() ; ) {
      QuerySolution soln = results.nextSolution() ;
     wikiLink=soln.getResource("link").toString();
-    System.out.println(wikiLink);
+   System.out.println(wikiLink);
 	
 	String abc[]=wikiLink.split("http://wikidata.org/entity/");
 		String queryString3="PREFIX wd: <http://www.wikidata.org/entity/> " +
 			"PREFIX sc: <http://schema.org/>" +
 			"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
 			"PREFIX wdt: <http://www.wikidata.org/prop/direct/>" +
-			"SELECT  distinct (STR(?moviename) AS ?movie) (group_concat(?genreinstance ; separator = ':') AS ?genre) (group_concat(?genreinstance1 ; separator = ':') AS ?genre1) WHERE {" +
+			"SELECT  distinct (STR(?moviename) AS ?movie) (group_concat(?genreinstance ; separator = ':') AS ?genre) " +
+			"(group_concat(?genreinstance1 ; separator = ':') AS ?genre1)(group_concat(?author ; separator = ':') AS ?authors) WHERE {" +
  			"wd:"+abc[1]+" wd:P136c ?fgenre,?fgenre1  ;" +
 					"rdfs:label ?moviename ." +
+					
 		         	"FILTER (LANG(?moviename)= 'en' )" +
+		         	
 		         	"OPTIONAL{"+
 					"?fgenre (wd:P31c|wd:P279c)* ?genreins  ." +
 					"?genreins wd:P31c wd:Q201658 ." +
@@ -92,6 +98,11 @@ public queryClass() throws FileNotFoundException{
 					"?genreins1  rdfs:label ?genreinstance1 ." +
 		         	"FILTER (LANG(?genreinstance1)= 'en' )" 
 		         	+"}" +
+		         	"OPTIONAL{" +
+		         	"wd:"+abc[1]+" wd:P58c ?authorlink ." +
+					"?authorlink rdfs:label ?author ." +
+					"FILTER (LANG(?author)= 'en' )" +
+		         	"}" +
 		"}"+
 		"group by ?moviename";
  		String service2="http://lod.openlinksw.com/sparql"	;
@@ -99,41 +110,65 @@ public queryClass() throws FileNotFoundException{
 		Query query2 = QueryFactory.create(queryString3);
  
 		QueryEngineHTTP qexec2 = QueryExecutionFactory.createServiceRequest(service2, query2);
- 
-		ResultSet results2 = qexec2.execSelect();
+ 		ResultSet results2 = qexec2.execSelect();
  
 		HashSet<String> movieGenre=new HashSet<String>();//because of duplicate results
-		 String genreResult="",movieResult="";
-String[] genreArray;
+		 String genreResult="",movieResult="",authorResult="";
+String[] genreArray,authorArray;
 		for ( ; results2.hasNext() ; ) {
 			
 		   QuerySolution soln1 = results2.nextSolution() ;
-	 System.out.println("***"+  soln1.getLiteral("?movie")+"   "+soln1.get("?genre")+"   "+soln1.get("?genre"));
+//System.out.println("***"+  soln1.getLiteral("?movie")+"   "+soln1.get("?genre")+"   "+soln1.get("?genre"));
 		   movieResult=soln1.getLiteral("?movie").toString().toLowerCase();
 		 genreResult= soln1.get("?genre").toString().toLowerCase();
 		genreResult =genreResult.concat(":"+soln1.get("?genre1").toString().toLowerCase());
+		authorResult=soln1.get("?authors").toString().toLowerCase();
 		genreArray= genreResult.split(":");
+		authorArray=authorResult.split(":");
  String text="";
 	Set<String> duplicates=new HashSet<>();//remove duplicates
 
 		for(String element:genreArray){
-
+if(element.equals("literature")||element.equals("drama film")||element.equals("drama") ){
+ 
+ 	continue;
+}
+ 
+			if(element.equals("fiction")||element.equals("novel"))
+				continue;
 			if(element.contains("film")||element.contains("genre")||element.contains("movie")){
 				element=element.replace("film", "");
 				element=element.replace("genre", "");
 				element=element.replace("movie", "");
-				element=element.trim();
+ 				element=element.trim();
 			}
-			element=element.trim();
-			element=element.replace(" ", "_");
-			duplicates.add(element);
- 			
+		element=element.trim();
+		element=element.replace(" ", "_");
+		duplicates.add(element);
+		
 		}
 		Iterator itr=duplicates.iterator();
 		for(;itr.hasNext();)
 		text=text.concat(itr.next()+" ");  
-		System.out.println("*******Cleaned *****"+text);
-	 
+			duplicates.clear();
+		for(String element:authorArray){
+			if(element.equals("anonymus"))
+				continue;
+			element=element.replace(" ","_");
+			duplicates.add(element);
+		}
+		String text1="";
+		 itr=duplicates.iterator();
+		for(;itr.hasNext();){
+			text1=text1.concat(itr.next()+" ");  
+
+		}
+		text=text.concat("#"+text1);
+		//text=text.trim();
+		System.out.println(text+"~~~~~~~~~~~~~~~~~~~~~~~");
+ 	 if(text.equals("")||text==null) 
+		 continue;
+		 else
 		  movies.put(abc[1], text);
  
 		}
@@ -141,152 +176,112 @@ String[] genreArray;
  	}
  	  
 		}
-		System.out.println("*************************");
+	 
+		 System.out.println("*************************");
 		Cosine_Similarity cs=new Cosine_Similarity();
 		DocumentParser dp=new DocumentParser();
-		dp.parseMap(movies);
+ 	    dp.parseMap(movies);
 		dp.tfIdfCalculatorMy(); //calculates tfidf
 	    dp.getCosineSimilarityMy(); //calculates cosine similarity   
+	    
 	    userProfile=dp.createUserProfile();
 	    for(Movie m:userProfile){
-	    	
-	    	String queryString3="PREFIX wd: <http://www.wikidata.org/entity/> " +
-	    			"PREFIX sc: <http://schema.org/>" +
-	    			"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
-	    			"PREFIX wdt: <http://www.wikidata.org/prop/direct/>" +
-	    			"SELECT  distinct (STR(?moviename) AS ?movie) (group_concat(?genreinstance ; separator = ':') AS ?genre) (group_concat(?genreinstance1 ; separator = ':') AS ?genre1) WHERE {" +
-	     			"wd:"+m.getMovieName()+" wd:P136c ?fgenre,?fgenre1  ;" +
-	    					"rdfs:label ?moviename ." +
-	    		         	"FILTER (LANG(?moviename)= 'en' )" +
-	    		         	"OPTIONAL{"+
-	    					"?fgenre (wd:P31c|wd:P279c)* ?genreins  ." +
-	    					"?genreins wd:P31c wd:Q201658 ." +
-	    					"?genreins  rdfs:label ?genreinstance ." +
-	    		         	"FILTER (LANG(?genreinstance)= 'en' )" 
-	    		         	+"}" +
-	    		         	"OPTIONAL{"+
-	    					"?fgenre1 (wd:P31c|wd:P279c)* ?genreins1  ." +
-	    					"?genreins1 wd:P31c wd:Q223393 ." +
-	    					"?genreins1  rdfs:label ?genreinstance1 ." +
-	    		         	"FILTER (LANG(?genreinstance1)= 'en' )" 
-	    		         	+"}" +
-	    		"}"+
-	    		"group by ?moviename";
-	    	
-	    	
-	    	
-	    	
-	    	
+	    	System.out.println(m.movieName+m.similarity);
 	    }
+ 	    bookSimilarity bs=new bookSimilarity();
+	    bs.parseUserProfile(userProfile);
+	   bookData= Initialize.bookData;
+//	   bs.jaccard(bookData, userProfile);
+	   bs.tfIdfCalculator(bookData);
+	   bs.getCosineSimilarityMy(bookData, userProfile);
+//	   for(Book singleBook:bookData){
+//		   Set<String>  s1 = new HashSet<>(),u,i ;
+// 		   for(String s:singleBook.getBookTerms()){
+//			   s1.add(s);
+//		   }
+//		   
+//		   double indSim=0.0;
+//		   int count=0;
+//		   for(Movie singleMovie:userProfile){
+//			   count++;
+//			  Set<String> s2 = new HashSet<>();
+//			  for(String s:singleMovie.getMovieTerms()){
+//				   s2.add(s);
+//			   }
+//			   u = new HashSet<>();
+//			      u.addAll(s1);
+//			      u.addAll(s2);
+//			     i = new HashSet<>();
+//			      i.addAll(s1);
+//			      i.retainAll(s2);
+//			      indSim+= (double) i.size() / (double) u.size();
+// 		   }
+//	 double overallSimilarity=indSim/count;
+//	 
+//	 singleBook.setSimilarity(overallSimilarity);
+//	   }
+	  
+	 Recommendations=  createUserProfile(bookData);
+//	  
+//		 
+	 Iterator<Book> itr=Recommendations.iterator();
+	 while(itr.hasNext()){
+		Book b= itr.next();
+		System.out.println("======================>>>>"+b.book+"	"+b.similarity+"         "+Arrays.toString(b.authors)+"   "+Arrays.toString(b.bookTerms));
+	//String a="======================>>>>"+b.book+"         "+b.similarity;
+	 
+	 }
+	 return Recommendations;
+//	    for(Movie m:userProfile){
+//	    	
+//	    	String queryString3="PREFIX wd: <http://www.wikidata.org/entity/> " +
+//	    			"PREFIX sc: <http://schema.org/>" +
+//	    			"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
+//	    			"PREFIX wdt: <http://www.wikidata.org/prop/direct/>" +
+//	    			"SELECT  distinct (STR(?moviename) AS ?movie) (group_concat(?genreinstance ; separator = ':') AS ?genre) (group_concat(?genreinstance1 ; separator = ':') AS ?genre1) WHERE {" +
+//	     			"wd:"+m.getMovieName()+" wd:P136c ?fgenre,?fgenre1  ;" +
+//	    					"rdfs:label ?moviename ." +
+//	    		         	"FILTER (LANG(?moviename)= 'en' )" +
+//	    		         	"OPTIONAL{"+
+//	    					"?fgenre (wd:P31c|wd:P279c)* ?genreins  ." +
+//	    					"?genreins wd:P31c wd:Q201658 ." +
+//	    					"?genreins  rdfs:label ?genreinstance ." +
+//	    		         	"FILTER (LANG(?genreinstance)= 'en' )" 
+//	    		         	+"}" +
+//	    		         	"OPTIONAL{"+
+//	    					"?fgenre1 (wd:P31c|wd:P279c)* ?genreins1  ." +
+//	    					"?genreins1 wd:P31c wd:Q223393 ." +
+//	    					"?genreins1  rdfs:label ?genreinstance1 ." +
+//	    		         	"FILTER (LANG(?genreinstance1)= 'en' )" 
+//	    		         	+"}" +
+//	    		"}"+
+//	    		"group by ?moviename";
+//	    	
+//	    	
+//	    	
+//	    	
+//	    	
+//	    }
 	
 
  	}
 //	
-	public static void retrieveBooks(){
-		
-		
-	}
-	public static List createInitialVector() throws FileNotFoundException{
-		List<String> genres=new ArrayList<String>();
-		File f=new File("genres.txt");
-		BufferedReader br=new BufferedReader(new FileReader(f));
-		String line;
-		try {
-			line = br.readLine();
-			while(line!=null){
- 
-				genres.add(line);
-		          line = br.readLine();
-
-			}
-		} catch (IOException e) {
-			   System.out.println(e+" error from create vectors");
-		}
-		 
-		return genres;
-	
-		
-	}
-	public static void createBookVector(String bookResult, HashSet<String> bookGenre){
-		//	vector.put(movieResult, arg1)
-			ArrayList<Integer> genreList = new ArrayList<Integer>(10);
-			Iterator itr=genresList.iterator();
-			breakloop:
-			while(itr.hasNext()){
-				String test=itr.next().toString();
-				if(!test.equals("science fiction")){
-				String[] x=test.split(" ");
-	 			for(String d:x){
-	 	 			if(bookGenre.contains(d)){
-	 	 			genreList.add(1);
-		 			continue breakloop;
-					}
-	 	 			}
-	 			genreList.add(0);
-			}
-				else{
-					if(bookGenre.contains(test)){
-						genreList.add(1);
-			 			continue breakloop;
-					}
-					else
-			 			genreList.add(0);
-				}
-			}
-		bookVector.put(bookResult, genreList);	
-	
-	}
-	public static void createItemVector(String movieResult, HashSet<String> movieGenre) {
-		Map<String, ArrayList<Integer>> vector= new HashMap<String, ArrayList<Integer>>();
-	//	vector.put(movieResult, arg1)
-		ArrayList<Integer> genreList = new ArrayList<Integer>(10);
-		 
- 
-		Iterator itr=genresList.iterator();
-		breakloop:
-		while(itr.hasNext()){
-			String test=itr.next().toString();
-			if(!test.equals("science fiction")){
-			
-			String[] x=test.split(" ");
- 			for(String d:x){
- 	 			if(movieGenre.contains(d)){
- 	 			genreList.add(1);
-	 			continue breakloop;
-				}
+	 public static List<Book> getUserProfile(List<Book> myList){
+ 		    Collections.sort(myList, new OverallSimilarity1());
+//		    	for(Book b:myList)
+//		    	 System.out.println(b.getBookName()+"Similarity is: "+b.getSimilarity());
+		    	return myList.subList(0, 100);
+    }
+			public static List<Book> createUserProfile(List<Book> myList){
 				 
+				 return getUserProfile(myList);
 				}
- 			genreList.add(0);
-
-		}
-			else{
-				if(movieGenre.contains(test)){
-					genreList.add(1);
-		 			continue breakloop;
-				}
-				else
-		 			genreList.add(0);
-
-				
-			}
-		}
-		
-		 
- 		vector.put(movieResult,genreList);
-		for (Entry<String, ArrayList<Integer>> e : vector.entrySet()) {
-		    //to get key
-		    System.out.println("Key: "+e.getKey());
-		    //and to get value
-		    itr=e.getValue().iterator();
-		    System.out.println("Values: ");
-		    while(itr.hasNext())
-		    	System.out.print(itr.next()+"  ");
-	    	System.out.println();
-
- 		}
-		profile.add(vector);
-
-	}
-	
-
+	 
+	 
+}
+class OverallSimilarity1 implements Comparator<Book>{
+	   @Override
+	    public int compare(Book a, Book b) {
+	        return a.getSimilarity()*1000< b.getSimilarity()*1000?1 :a.getSimilarity()*1000== b.getSimilarity()*1000?0:-1;
+	    }
 }

@@ -16,11 +16,12 @@ public class TfIdf {
     public double tfCalculator(String[] totalterms, String termToCheck) {
         double count = 0;  //to count the overall occurrence of the term termToCheck
         for (String s : totalterms) {
-            if (s.equalsIgnoreCase(termToCheck)) {
+                     if (s.contains(termToCheck)) {
                 count++;
+               
             }
         }
-        return count / totalterms.length;
+        return count ;
     }
 
     /**
@@ -33,9 +34,38 @@ public class TfIdf {
         double count = 0;
         Iterator<String[]> itr=allTerms.iterator();
         while(itr.hasNext()){
+         
         	String[] ss =itr.next();
         	for (String s : ss) {
-                if (s.equalsIgnoreCase(termToCheck)) {
+                if (s.contains(termToCheck)) {
+                    count++;
+                    break;
+                }
+            }
+        	
+        	}
+        
+//        for (String[] ss : allTerms) {
+//            for (String s : ss) {
+//                if (s.equalsIgnoreCase(termToCheck)) {
+//                    count++;
+//                    break;
+//                }
+//            }
+//        }
+        if(count==0){
+        	count-=count;
+        }
+        return 1 + Math.log(allTerms.size() / count);
+    }
+    public double dfCalculator(List allTerms, String termToCheck) {
+        double count = 0;
+        Iterator<String[]> itr=allTerms.iterator();
+        while(itr.hasNext()){
+        	String[] ss =itr.next();
+        	for (String s : ss) {
+                if (s.contains(termToCheck)) {
+                	
                     count++;
                     break;
                 }
@@ -50,6 +80,6 @@ public class TfIdf {
 //                }
 //            }
 //        }
-        return 1 + Math.log(allTerms.size() / count);
+        return  count/allTerms.size();
     }
 }
