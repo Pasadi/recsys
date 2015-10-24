@@ -46,7 +46,7 @@ public class Initialize {
 			if(!prev.equals("*")&&!prev.equals(arr[0])){
 				System.out.println("sending "+prev);
 				MapLikesToLinks.mapping(abc);
-				System.out.println("done sending "+prev);
+				System.out.println("done "+prev);
 				
 				abc.clear();
 				abc.add(arr);
