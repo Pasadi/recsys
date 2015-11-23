@@ -37,7 +37,7 @@ public class TfIdf {
          
         	String[] ss =itr.next();
         	for (String s : ss) {
-                if (s.contains(termToCheck)) {
+                if (s.equals(termToCheck)) {
                     count++;
                     break;
                 }

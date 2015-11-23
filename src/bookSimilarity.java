@@ -211,6 +211,7 @@ public void parseUserProfile(List<Movie> userProfile) throws FileNotFoundExcepti
     }
     public void jaccard(List<Book> bookData, List<Movie> userProfile){
  	   for(Book singleBook:bookData){
+ 		   singleBook.setSimilarity(0.0);
 		   Set<String>  s1 = new HashSet<>(),u,i ;
  		   for(String s:singleBook.getBookTerms()){
 			   s1.add(s);
@@ -230,13 +231,16 @@ public void parseUserProfile(List<Movie> userProfile) throws FileNotFoundExcepti
 			     i = new HashSet<>();
 			      i.addAll(s1);
 			      i.retainAll(s2);
-			      indSim+= (double) i.size() / (double) u.size();
-			 //   if(singleBook.getSimilarity()<indSim)  	
+			      indSim= (double) i.size() / (double) u.size();
+			   if(singleBook.getSimilarity()<indSim) {
+				   singleBook.setSimilarity(indSim);
+			   } 	
 
  		   }
 	// double overallSimilarity=indSim/count;
-		   singleBook.setSimilarity(indSim);
-    }
+		  
+ 		   }
+    
     }
     public void getCosineSimilarityMy(List<Book> BookData,List<Movie> userProfile) {
     	double overallSimilarityGenre=0.0,overallSimilarityAuthor=0.0;
@@ -260,9 +264,42 @@ public void parseUserProfile(List<Movie> userProfile) throws FileNotFoundExcepti
     			 
     		}
     		
-    		m.setSimilarity((overallSimilarityGenre+overallSimilarityAuthor)/count);
+    		m.setSimilarity((overallSimilarityGenre)/count);
     		
      
     }
 }
+    public void jaccardTest(List<Book> bookData, List<Movie> userProfile){
+  	   for(Movie m:userProfile){
+  		 
+ 		   Set<String>  s1 = new HashSet<>(),u,i ;
+  		   for(String s:m.getMovieTerms()){
+ 			   s1.add(s);
+ 		   }
+ 		   
+ 		   double indSim=0.0;
+ 		   int count=0;
+ 		   for(Book b:bookData){
+ 			   count++;
+ 			  Set<String> s2 = new HashSet<>();
+ 			  for(String term:b.getBookTerms()){
+ 				   s2.add(term);
+ 			   }
+ 			   u = new HashSet<>();
+ 			      u.addAll(s1);
+ 			      u.addAll(s2);
+ 			     i = new HashSet<>();
+ 			      i.addAll(s1);
+ 			      i.retainAll(s2);
+ 			      indSim = (double) i.size() / (double) u.size();
+ 			      if(b.getSimilarity()<indSim){
+ 			    	  b.setSimilarity(indSim);
+ 			      }
+ 			 //   if(singleBook.getSimilarity()<indSim)  	
+
+  		   }
+ 	// double overallSimilarity=indSim/count;
+   		   }
+       
+     }
 }

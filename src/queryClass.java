@@ -191,46 +191,21 @@ if(element.equals("literature")||element.equals("drama film")||element.equals("d
  	    bookSimilarity bs=new bookSimilarity();
 	    bs.parseUserProfile(userProfile);
 	   bookData= Initialize.bookData;
-//	   bs.jaccard(bookData, userProfile);
-	   bs.tfIdfCalculator(bookData);
+ 	 
+      bs.tfIdfCalculator(bookData);
 	   bs.getCosineSimilarityMy(bookData, userProfile);
-//	   for(Book singleBook:bookData){
-//		   Set<String>  s1 = new HashSet<>(),u,i ;
-// 		   for(String s:singleBook.getBookTerms()){
-//			   s1.add(s);
-//		   }
-//		   
-//		   double indSim=0.0;
-//		   int count=0;
-//		   for(Movie singleMovie:userProfile){
-//			   count++;
-//			  Set<String> s2 = new HashSet<>();
-//			  for(String s:singleMovie.getMovieTerms()){
-//				   s2.add(s);
-//			   }
-//			   u = new HashSet<>();
-//			      u.addAll(s1);
-//			      u.addAll(s2);
-//			     i = new HashSet<>();
-//			      i.addAll(s1);
-//			      i.retainAll(s2);
-//			      indSim+= (double) i.size() / (double) u.size();
-// 		   }
-//	 double overallSimilarity=indSim/count;
-//	 
-//	 singleBook.setSimilarity(overallSimilarity);
-//	   }
-	  
+	  // bs.jaccard(bookData, userProfile);
+ 
 	 Recommendations=  createUserProfile(bookData);
 //	  
 //		 
 	 Iterator<Book> itr=Recommendations.iterator();
-	 while(itr.hasNext()){
-		Book b= itr.next();
-		System.out.println("======================>>>>"+b.book+"	"+b.similarity+"         "+Arrays.toString(b.authors)+"   "+Arrays.toString(b.bookTerms));
-	//String a="======================>>>>"+b.book+"         "+b.similarity;
-	 
-	 }
+//	 while(itr.hasNext()){
+//		Book b= itr.next();
+//		System.out.println("======================>>>>"+b.book+"	"+b.similarity+"         "+Arrays.toString(b.authors)+"   "+Arrays.toString(b.bookTerms));
+//	//String a="======================>>>>"+b.book+"         "+b.similarity;
+//	 
+//	 }
 	 return Recommendations;
 //	    for(Movie m:userProfile){
 //	    	
@@ -267,10 +242,14 @@ if(element.equals("literature")||element.equals("drama film")||element.equals("d
  	}
 //	
 	 public static List<Book> getUserProfile(List<Book> myList){
+		 List<Book> myListNew=new ArrayList<>();
  		    Collections.sort(myList, new OverallSimilarity1());
-//		    	for(Book b:myList)
-//		    	 System.out.println(b.getBookName()+"Similarity is: "+b.getSimilarity());
-		    	return myList.subList(0, 100);
+		    	for(Book b:myList){
+ 		    	 if(b.getSimilarity()>0.0)
+		    		 myListNew.add(b);
+		    	}
+		    	System.out.println("###########################"+myListNew.size());
+		    	return myListNew.subList(0, 100);
     }
 			public static List<Book> createUserProfile(List<Book> myList){
 				 
