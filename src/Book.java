@@ -6,7 +6,14 @@ public class Book {
 	String[] bookTerms;
 	String[] authors;
 	double[] tfVectorAuthor;
+	String[] allTerms;
 
+	public String[] getAllTerms() {
+		return allTerms;
+	}
+	public void setAllTerms(String[] allTerms) {
+		this.allTerms = allTerms;
+	}
 	public double[] getTfVectorAuthor() {
 		return tfVectorAuthor;
 	}

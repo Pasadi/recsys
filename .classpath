@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jena"/>
 	<classpathentry kind="lib" path="C:/Users/user/Downloads/lucene-3.5.0.jar/lucene-3.5.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/user/Downloads/org-apache-commons-logging.jar/org-apache-commons-logging.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

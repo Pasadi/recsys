@@ -5,7 +5,13 @@ public class Movie {
 	double similarity;
 	double[] tfVector;
 	double[] tfVectorAuthor;
-
+    String[] allTerms;
+	public String[] getAllTerms() {
+		return allTerms;
+	}
+	public void setAllTerms(String[] allTerms) {
+		this.allTerms = allTerms;
+	}
 	public double[] getTfVectorAuthor() {
 		return tfVectorAuthor;
 	}

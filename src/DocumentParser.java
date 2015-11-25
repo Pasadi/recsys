@@ -21,6 +21,8 @@ import java.util.function.ToDoubleFunction;
 import java.util.function.ToIntFunction;
 import java.util.function.ToLongFunction;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 import jdk.jfr.events.FileWriteEvent;
 
 /**
@@ -104,9 +106,11 @@ public class DocumentParser   {
                }
                m.setAuthors(seperator[1].split(" "));
                termsDocsArrayAuthor.add(seperator[1].split(" "));
+               
           }
          
           else m.setAuthors(arr);
+          m.setAllTerms(ArrayUtils.addAll(m.getMovieTerms(),m.getAuthors()));
        reference.add(m);
                 
         }

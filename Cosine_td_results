@@ -1,0 +1,1143 @@
+sending u96328
+log4j:WARN No appenders could be found for logger (org.apache.jena.riot.system.stream.JenaIOEnvironment).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+*************************
+** unique term :neo-noir** unique term :noir** unique term :crime** unique term :crime_fiction** unique term :buddy** unique term :action** unique term :thriller** unique term :science_fiction** unique term :adventure** unique term :horror_comedy** unique term :romance** unique term :horror** unique term :comedy** unique term :parody** unique term :zombie** unique term :fantastique** unique term :romantic_comedy** unique term :zombie_comedy** unique term :war** unique term :historical** unique term :mystery** unique term :western** unique term :biographical** unique term :biography** unique term :fantasy** unique term :heist** unique term :political_thriller** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teenQ2388660.0634207370470926
+Q8587240.04442644665563575
+Q6796110.02818383105244647
+Q599310.02615781867793926
+Q193550.02615781867793926
+###########################39
+No. of Matches: 0
+done u96328
+sending u33855
+*************************
+** unique term :horror_comedy** unique term :romance** unique term :horror** unique term :comedy** unique term :parody** unique term :zombie** unique term :fantastique** unique term :romantic_comedy** unique term :buddy** unique term :zombie_comedy** unique term :action** unique term :crime** unique term :crime_fiction** unique term :exploitation** unique term :thriller** unique term :martial_arts** unique term :slasher** unique term :fantasy** unique term :war** unique term :historical** unique term :superhero** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :road** unique term :science_fiction** unique term :heist** unique term :children's** unique term :z** unique term :neo-noir** unique term :noirQ10510320.026173929974151532
+Q7297880.024311976509352202
+Q8587240.0
+Q9633510.0
+Q8226600.0
+###########################228
+No. of Matches: 0
+done u33855
+sending u33889
+*************************
+** unique term :horror** unique term :teen** unique term :slasher** unique term :comedy** unique term :coming-of-age_story** unique term :romance** unique term :young-adult_literature** unique term :romantic_comedy** unique term :musical** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :crime** unique term :crime_fiction** unique term :buddy** unique term :narrative** unique term :short_storyQ7479400.0
+Q77662140.0
+Q9311650.0
+Q2677210.0
+Q30362880.0
+###########################269
+Found Matching Book:the lord of the rings     19
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.1111111111111111
+F1 Score: 0.06896551724137932
+done u33889
+sending u27471
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :adventure** unique term :space_western** unique term :action** unique term :science_fiction** unique term :crime** unique term :crime_fiction** unique term :horror_comedy** unique term :horror** unique term :parody** unique term :zombie** unique term :fantastique** unique term :buddy** unique term :zombie_comedy** unique term :fantasy** unique term :documentary** unique term :war** unique term :historical** unique term :biographical** unique term :biography** unique term :thriller** unique term :coming-of-age_story** unique term :musical** unique term :young-adult_literature** unique term :teen** unique term :mystery** unique term :spy** unique term :neo-noir** unique term :noir** unique term :erotic** unique term :post-apocalyptic_fictionQ1830810.11375759919540598
+Q11277090.10578152614604704
+Q2227200.08174689156191577
+Q9134390.07726989901650798
+Q4670530.06375465399173597
+###########################73
+No. of Matches: 0
+done u27471
+sending u156343
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :musical** unique term :teen** unique term :buddy** unique term :science_fiction** unique term :adventure** unique term :fantasy** unique term :fantastique** unique term :heist** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :action** unique term :children's** unique term :war** unique term :historical** unique term :tragicomedyQ5064180.2607328482254867
+Q7538990.23405557054467763
+Q2220410.21343882500707761
+Q5505580.1936938130120523
+Q11218780.1905773096751124
+###########################117
+No. of Matches: 0
+done u156343
+sending u57019
+*************************
+** unique term :action** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :science_fiction** unique term :fantasy** unique term :fantastique** unique term :superhero** unique term :heist** unique term :comedy** unique term :war** unique term :historical** unique term :buddy** unique term :adventure** unique term :horror** unique term :biographical** unique term :biography** unique term :swashbuckler** unique term :musical** unique term :romance** unique term :romantic_comedy** unique term :spy** unique term :disasterQ1563090.2179179109266796
+Q5074610.21431645988782305
+Q834950.19247230394144013
+Q251880.18526614408537648
+Q1565970.1790266762549665
+###########################154
+No. of Matches: 0
+done u57019
+sending u115946
+*************************
+** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :action** unique term :science_fiction** unique term :adventure** unique term :horror** unique term :comedy** unique term :buddy** unique term :exploitation** unique term :coming-of-age_story** unique term :romance** unique term :young-adult_literature** unique term :teen** unique term :martial_arts** unique term :spy** unique term :thriller** unique term :disaster** unique term :parodyQ1795030.06666666666666667
+Q490030.04261198752747449
+Q17674910.04224709915667781
+Q1846050.03647938827415169
+Q8379450.03647938827415169
+###########################107
+No. of Matches: 0
+done u115946
+sending u115927
+*************************
+** unique term :science_fiction** unique term :fantasy** unique term :action** unique term :fantastique** unique term :swashbuckler** unique term :romance** unique term :thriller** unique term :disaster** unique term :comedy** unique term :exploitation** unique term :martial_arts** unique term :buddy** unique term :coming-of-age_story** unique term :musical** unique term :young-adult_literature** unique term :teen** unique term :horror** unique term :adventure** unique term :monster** unique term :romantic_comedy** unique term :heist** unique term :crime** unique term :crime_fictionQ6321740.08339922939885015
+Q812050.07417137167147757
+Q4640420.06169961469942509
+Q1895050.06169961469942509
+Q248710.05709303107172843
+###########################158
+No. of Matches: 0
+done u115927
+sending u96305
+*************************
+** unique term :teen** unique term :fantasy** unique term :action** unique term :fantastique** unique term :swashbuckler** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :spy** unique term :road** unique term :buddy** unique term :science_fiction** unique term :coming-of-age_story** unique term :musical** unique term :young-adult_literatureQ14631760.026354969798735393
+Q467170.020990651220292863
+Q1610870.020990651220292863
+Q6193740.009147358274126218
+Q11333160.009147358274126218
+###########################117
+No. of Matches: 0
+done u96305
+sending u39184
+*************************
+** unique term :buddy** unique term :adventure** unique term :action** unique term :science_fiction** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :biographical** unique term :musical** unique term :biography** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :crime** unique term :crime_fictionQ1722410.07142857142857142
+Q177380.05098843502960166
+Q4711690.0
+Q9370870.0
+Q10490950.0
+###########################0
+No. of Matches: 0
+done u39184
+sending u96210
+*************************
+** unique term :crime** unique term :crime_fiction** unique term :neo-noir** unique term :noir** unique term :thriller** unique term :comedy** unique term :teen** unique term :documentary** unique term :docudrama** unique term :action** unique term :swashbuckler** unique term :heist** unique term :science_fiction** unique term :coming-of-age_story** unique term :romance** unique term :young-adult_literature** unique term :fantasy** unique term :fantastique** unique term :psychological_horror** unique term :horror** unique term :romantic_comedy** unique term :historical** unique term :war** unique term :girls_with_guns** unique term :biographical** unique term :musical** unique term :biography** unique term :buddy** unique term :exploitation** unique term :rape_and_revengeQ14262480.15519796301755134
+Q834950.12998227938446366
+Q1900860.12742794486066072
+Q4831660.12742794486066072
+Q6425590.11539873380152152
+###########################39
+No. of Matches: 0
+done u96210
+sending u96246
+*************************
+** unique term :horror** unique term :thriller** unique term :documentary** unique term :docudrama** unique term :fantasy** unique term :fantastique** unique term :adventure** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :science_fiction** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :buddy** unique term :tragicomedy** unique term :biographical** unique term :biography** unique term :actionQ1049050.1968193151676851
+Q4028180.1866579605971567
+Q1821530.18173872695201712
+Q2204230.1629152796241869
+Q1748110.14540443716236068
+###########################81
+Found Matching Book:the alchemist     9
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.14285714285714285
+F1 Score: 0.07407407407407408
+done u96246
+sending u27576
+*************************
+** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :comedy** unique term :teen** unique term :crime** unique term :crime_fiction** unique term :horror_comedy** unique term :horror** unique term :slasher** unique term :fantasy** unique term :musical** unique term :fantastique** unique term :monster** unique term :science_fiction** unique term :adventure** unique term :westernQ6796790.1656610836241197
+Q6519230.12547110676419096
+Q5468290.08241260065538218
+Q1035690.08241260065538218
+Q9573230.06797855787387314
+###########################40
+Found Matching Book:a confederacy of dunces     18
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.14285714285714285
+F1 Score: 0.07407407407407408
+done u27576
+sending u33702
+*************************
+** unique term :action** unique term :thriller** unique term :science_fiction** unique term :disaster** unique term :musical** unique term :fantasy** unique term :fantastique** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :teen** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :exploitation** unique term :martial_artsQ3693880.23549886794891087
+Q4904640.20572433639353652
+Q115930.18584009029186377
+Q1765680.18584009029186377
+Q2155180.1520651674910706
+###########################0
+No. of Matches: 0
+done u33702
+sending u27521
+*************************
+** unique term :musical** unique term :monster** unique term :adventure** unique term :action** unique term :science_fiction** unique term :thriller** unique term :comedy** unique term :fantasy** unique term :fantastique** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :buddy** unique term :psychological_horror** unique term :horror** unique term :romance** unique term :romantic_comedy** unique term :teen** unique term :children'sQ6326680.18296293020073956
+Q250430.17732973876018598
+Q2392960.17732973876018598
+Q5064180.1705936764182934
+Q1616780.15643267561298474
+###########################217
+Found Matching Book:the secrets of the immortal nicholas flamel     9
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.125
+F1 Score: 0.07142857142857144
+done u27521
+sending u57168
+*************************
+** unique term :horror** unique term :fantasy** unique term :action** unique term :fantastique** unique term :thriller** unique term :girls_with_guns** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :science_fiction** unique term :teen** unique term :parody** unique term :children's** unique term :exploitation** unique term :martial_arts** unique term :disasterQ2770800.036141617417012696
+Q6215870.024887679467355865
+Q7979380.01619379650071468
+Q4710540.0
+Q7523130.0
+###########################117
+No. of Matches: 0
+done u57168
+sending u57146
+*************************
+** unique term :horror** unique term :fantasy** unique term :fantastique** unique term :adventure** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :crime** unique term :crime_fiction** unique term :science_fiction** unique term :actionQ6326680.3375642903875561
+Q3203840.3375642903875561
+Q411320.3030001527252349
+Q7855550.29927214402301544
+Q5159310.27142313637980364
+###########################217
+Found Matching Book:the hobbit     18
+Found Matching Book:the princess bride     2
+No. of Matches: 2
+Precision: 0.1
+Recall: 0.2857142857142857
+F1 Score: 0.14814814814814817
+done u57146
+sending u72935
+*************************
+** unique term :adventure** unique term :action** unique term :science_fiction** unique term :horror** unique term :thriller** unique term :fantasy** unique term :fantastique** unique term :horror_comedy** unique term :comedy** unique term :buddy** unique term :sports** unique term :parody** unique term :neo-noir** unique term :noir** unique term :crime** unique term :crime_fiction** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :children's** unique term :biographical** unique term :war** unique term :historical** unique term :biography** unique term :samurai_cinema** unique term :animated** unique term :comic** unique term :animeQ4719920.202145830697394
+Q1048140.18911947755604785
+Q2191550.17384890824586735
+Q6734860.15660779290454244
+Q7845140.15660779290454244
+###########################39
+No. of Matches: 0
+done u72935
+sending u33695
+*************************
+** unique term :horror_comedy** unique term :horror** unique term :comedy** unique term :adventure** unique term :action** unique term :science_fiction** unique term :fantasy** unique term :fantastique** unique term :swashbuckler** unique term :teen** unique term :slasher** unique term :thriller** unique term :buddy** unique term :romance** unique term :romantic_comedy** unique term :musical** unique term :children's** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :exploitation** unique term :martial_arts** unique term :biographical** unique term :biographyQ6796110.047277932479520765
+Q2064970.042196887852876216
+Q14150290.04203419816021393
+Q4642520.04137021300731939
+Q1328630.037037037037037035
+###########################0
+No. of Matches: 0
+done u33695
+sending u33692
+*************************
+** unique term :western** unique term :thriller** unique term :science_fiction** unique term :adventure** unique term :space_western** unique term :action** unique term :fantasy** unique term :fantastique** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :children's** unique term :neo-noir** unique term :noir** unique term :comedyQ1556530.0409344298012113
+Q2170200.03158394032733601
+Q9498790.03000100048166133
+Q2133260.02791353188865638
+Q6227420.027849012787703145
+###########################217
+Found Matching Book:the lord of the rings     13
+Found Matching Book:harry potter     9
+No. of Matches: 2
+Precision: 0.1
+Recall: 0.2857142857142857
+F1 Score: 0.14814814814814817
+done u33692
+sending u84552
+*************************
+** unique term :comedy** unique term :fantasy** unique term :fantastique** unique term :romance** unique term :romantic_comedy** unique term :neo-noir** unique term :mystery** unique term :noir** unique term :crime** unique term :crime_fiction** unique term :science_fiction** unique term :monster** unique term :buddy** unique term :exploitation** unique term :action** unique term :martial_arts** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :children'sQ6704390.2165432519784449
+Q10660980.14987658531177822
+Q9498790.14987658531177822
+Q1810860.10915869588445497
+Q401150.10456231012862588
+###########################117
+No. of Matches: 0
+done u84552
+sending u156493
+*************************
+** unique term :musical** unique term :horror** unique term :slasher** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :science_fiction** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :exploitation** unique term :rape_and_revenge** unique term :biographical** unique term :biography** unique term :documentary** unique term :docudrama** unique term :crime** unique term :crime_fiction** unique term :teen** unique term :action** unique term :thrillerQ4028180.27419751791123975
+Q9115200.27419751791123975
+Q3686740.27419751791123975
+Q11569770.2741975179112397
+Q1959490.23354959264508204
+###########################39
+No. of Matches: 0
+done u156493
+sending u84569
+*************************
+** unique term :comedy** unique term :romance** unique term :teen** unique term :fantasy** unique term :fantastique** unique term :children's** unique term :adventure** unique term :action** unique term :science_fiction** unique term :buddyQ1966020.7769027324696063
+Q395710.7769027324696063
+Q1556530.7769027324696063
+Q1865720.7717484475618736
+Q290110.699595418910962
+###########################246
+No. of Matches: 0
+done u84569
+sending u57123
+*************************
+** unique term :musical** unique term :adventure** unique term :comedy** unique term :thriller** unique term :science_fiction** unique term :disaster** unique term :action** unique term :teen** unique term :fantasy** unique term :fantastique** unique term :swashbuckler** unique term :coming-of-age_story** unique term :romance** unique term :young-adult_literature** unique term :romantic_comedy** unique term :spyQ10490950.10097135189987419
+Q7617400.10097135189987419
+Q14628220.0727089777748264
+Q1610870.045798440128347113
+Q8172660.0363242607627631
+###########################39
+No. of Matches: 0
+done u57123
+sending u84512
+*************************
+** unique term :musical** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :buddy** unique term :teen** unique term :thriller** unique term :disaster** unique term :fantasy** unique term :fantastique** unique term :adventure** unique term :science_fiction** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :children's** unique term :mystery** unique term :horror** unique term :action** unique term :girls_with_gunsQ729250.2792158188190913
+Q4982810.25392215015689873
+Q2388660.24039955253906214
+Q2233160.21978361884390354
+Q15190490.21297743520616733
+###########################39
+No. of Matches: 0
+done u84512
+sending u84523
+*************************
+** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :coming-of-age_story** unique term :female_buddy** unique term :young-adult_literature** unique term :teen** unique term :buddy** unique term :musicalQ9393250.11468317044019047
+Q755460.0973485384075247
+Q2764150.09209050916427591
+Q10462950.09209050916427591
+Q3799940.08847055664863551
+###########################168
+Found Matching Book:the princess diaries     19
+Found Matching Book:the sisterhood of the traveling pants     15
+No. of Matches: 2
+Precision: 0.1
+Recall: 0.25
+F1 Score: 0.14285714285714288
+done u84523
+sending u72990
+*************************
+** unique term :buddy** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :fantasy** unique term :fantastique** unique term :superhero** unique term :action** unique term :adventure** unique term :biographical** unique term :biography** unique term :stoner** unique term :thriller** unique term :science_fictionQ20612590.05462779007382354
+Q4670760.05462779007382353
+Q11337720.039599499884917254
+Q149485730.038669902190916296
+Q1773740.03795094840580389
+###########################117
+No. of Matches: 0
+done u72990
+sending u156083
+*************************
+** unique term :political_thriller** unique term :thriller** unique term :spy** unique term :adventure** unique term :coming-of-age_story** unique term :children's** unique term :fantasy** unique term :musical** unique term :young-adult_literature** unique term :fantastique** unique term :teen** unique term :action** unique term :buddy** unique term :western** unique term :romance** unique term :historical** unique term :war** unique term :crime** unique term :crime_fiction** unique term :exploitation** unique term :horror** unique term :superhero** unique term :neo-noir** unique term :noir** unique term :comedyQ1519040.1631119043826287
+Q6790230.1332542285039089
+Q1901450.11868117428624461
+Q5097990.11868117428624458
+Q2171820.09003817722407377
+###########################261
+No. of Matches: 0
+done u156083
+sending u33998
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :musical** unique term :teen** unique term :fantasy** unique term :fantastique** unique term :buddy** unique term :science_fiction** unique term :horror_comedy** unique term :horror** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :exploitation** unique term :rape_and_revenge** unique term :psychological_horror** unique term :mystery** unique term :thriller** unique term :slasherQ5064030.09411034736061225
+Q4787480.07114601987514924
+Q2677210.06945938773195802
+Q5726160.051864008401421184
+Q9340360.043095815415902426
+###########################39
+Found Matching Book:twenties girl     19
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.125
+F1 Score: 0.07142857142857144
+done u33998
+sending u39356
+*************************
+** unique term :biographical** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :comedy** unique term :biography** unique term :teen** unique term :science_fiction** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :crime** unique term :crime_fiction** unique term :horror** unique term :adventure** unique term :female_buddy** unique term :buddy** unique term :monster** unique term :documentary** unique term :action** unique term :neo-noir** unique term :noir** unique term :romance** unique term :war** unique term :historical** unique term :romantic_comedy** unique term :thriller** unique term :musicalQ1920730.09319869612789339
+Q248150.09319869612789339
+Q3370780.08467048632917568
+Q2012930.08348275220517724
+Q8271060.04340078311094186
+###########################134
+No. of Matches: 0
+done u39356
+sending u115574
+*************************
+** unique term :superhero** unique term :action** unique term :thriller** unique term :teen** unique term :fantasy** unique term :fantastique** unique term :swashbuckler** unique term :biographical** unique term :war** unique term :historical** unique term :biography** unique term :psychological_horror** unique term :horror** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :spy** unique term :musical** unique term :adventure** unique term :children'sQ467170.2796964725726163
+Q2451720.22307936236232137
+Q3093660.15123557869092308
+Q9363270.12998118370767184
+Q250430.12998118370767184
+###########################246
+Found Matching Book:the three musketeers     1
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.125
+F1 Score: 0.07142857142857144
+done u115574
+sending u69394
+*************************
+** unique term :action** unique term :thriller** unique term :science_fiction** unique term :comedy** unique term :teen** unique term :romance** unique term :fantasy** unique term :fantastique** unique term :romantic_comedy** unique term :disaster** unique term :coming-of-age_story** unique term :psychological_horror** unique term :horror** unique term :young-adult_literature** unique term :spy** unique term :war** unique term :historicalQ2207130.05663001977511499
+Q6425590.03974506933641743
+Q3291270.030851172118050198
+Q16770880.028061563805208068
+Q2012930.019895278547076962
+###########################117
+No. of Matches: 0
+done u69394
+sending u156270
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :buddy** unique term :exploitation** unique term :horror** unique term :rape_and_revenge** unique term :thriller** unique term :biographical** unique term :biography** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :fantasy** unique term :road** unique term :fantastique** unique term :western** unique term :adventure** unique term :science_fiction** unique term :documentary** unique term :crime** unique term :crime_fiction** unique term :bQ233950.055534206374375006
+Q5525600.05468753826065123
+Q7478770.05282024488323923
+Q8321900.05282024488323923
+Q399990.03836373309081846
+###########################117
+No. of Matches: 0
+done u156270
+sending u84774
+*************************
+** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :action** unique term :swashbuckler** unique term :road** unique term :western** unique term :heist** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :science_fiction** unique term :horror** unique term :monster** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :tragicomedy** unique term :teen** unique term :buddy** unique term :biographical** unique term :biographyQ467170.028067722535474855
+Q1519040.013464993950112124
+Q11398010.012566554371172965
+Q834950.010945477221299389
+Q1622550.007587595268230938
+###########################243
+No. of Matches: 0
+done u84774
+sending u69986
+*************************
+** unique term :adventure** unique term :action** unique term :science_fiction** unique term :horror** unique term :thriller** unique term :comedy** unique term :monster** unique term :disaster** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :teenQ2103640.22104950721996944
+Q11305320.22104950721996944
+Q1237420.2161124429442186
+Q1053870.1919769833846013
+Q4704070.14425798253812186
+###########################177
+No. of Matches: 0
+done u69986
+sending u127050
+*************************
+** unique term :buddy** unique term :mystery** unique term :comedy** unique term :romance** unique term :fantasy** unique term :fantastique** unique term :biographical** unique term :musical** unique term :biography** unique term :teen** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :action** unique term :war** unique term :historical** unique term :children's** unique term :romantic_comedyQ795030.16472044440967573
+Q3091530.1521893673829112
+Q8172660.14740672055500673
+Q2064970.12603491998195326
+Q9498790.12603491998195326
+###########################39
+No. of Matches: 0
+done u127050
+sending u96767
+*************************
+** unique term :horror** unique term :adventure** unique term :action** unique term :science_fiction** unique term :biographical** unique term :biography** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :fantasy** unique term :fantastique** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :family** unique term :crime** unique term :buddy** unique term :crime_fiction** unique term :horror_comedy** unique term :parody** unique term :zombie** unique term :zombie_comedy** unique term :thriller** unique term :girls_with_guns** unique term :musical** unique term :documentary** unique term :exploitation** unique term :martial_arts** unique term :disasterQ2211130.1916072353796122
+Q4259920.15160723537961218
+Q3156640.15160723537961218
+Q13400870.15160723537961218
+Q11284990.15160723537961218
+###########################115
+Found Matching Book:the hitchhiker's guide to the galaxy     0
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.14285714285714285
+F1 Score: 0.07407407407407408
+done u96767
+sending u33370
+*************************
+** unique term :neo-noir** unique term :noir** unique term :crime** unique term :crime_fiction** unique term :adventure** unique term :action** unique term :monster** unique term :science_fiction** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :comedy** unique term :teen** unique term :thriller** unique term :buddy** unique term :romance** unique term :romantic_comedy** unique term :parody** unique term :horror** unique term :western** unique term :heist** unique term :war** unique term :historical** unique term :horror_comedy** unique term :disasterQ3149420.09275340567709352
+Q4299340.07184245103148586
+Q5097990.06394631669997139
+Q6264830.04409586255769683
+Q6519230.037646247974356305
+###########################172
+No. of Matches: 0
+done u33370
+sending u115531
+*************************
+** unique term :musical** unique term :monster** unique term :heist** unique term :action** unique term :crime** unique term :crime_fiction** unique term :superhero** unique term :science_fiction** unique term :neo-noir** unique term :noir** unique term :thriller** unique term :adventure** unique term :horror** unique term :children's** unique term :fantasy** unique term :comedy** unique term :fantastique** unique term :teen** unique term :horror_comedy** unique term :buddy** unique term :romance** unique term :post-apocalyptic_fictionQ2005720.2680498263719328
+Q3806670.2680498263719328
+Q2050280.2680498263719328
+Q3725140.19965020310462042
+Q26223470.1976065958443958
+###########################11
+No. of Matches: 0
+done u115531
+sending u18075
+*************************
+** unique term :adventure** unique term :action** unique term :science_fiction** unique term :musical** unique term :horror_comedy** unique term :horror** unique term :comedy** unique term :neo-noir** unique term :noir** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :fantasy** unique term :fantastique** unique term :documentary** unique term :superhero** unique term :teen** unique term :western** unique term :buddy** unique term :psychological_horror** unique term :mystery** unique term :parody** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :exploitation** unique term :rape_and_revengeQ5505580.21977645279395328
+Q1901450.18940872661051272
+Q149485730.18789178616282334
+Q4844420.18170098451630096
+Q364790.17152392699605334
+###########################0
+No. of Matches: 0
+done u18075
+sending u27904
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :historical** unique term :war** unique term :comedy_of_remarriage** unique term :action** unique term :swashbuckler** unique term :biographical** unique term :musical** unique term :biography** unique term :documentary** unique term :docudrama** unique term :thriller** unique term :fantasy** unique term :fantastique** unique term :science_fiction** unique term :exploitation** unique term :martial_arts** unique term :girls_with_gunsQ4787480.07824548661634766
+Q2006720.07824548661634766
+Q2082690.07468030829906883
+Q4787800.037057595645634524
+Q1898890.037057595645634524
+###########################39
+No. of Matches: 0
+done u27904
+sending u33259
+*************************
+** unique term :biographical** unique term :biography** unique term :romance** unique term :comedy_of_remarriage** unique term :comedy** unique term :romantic_comedy** unique term :mystery** unique term :action** unique term :swashbuckler** unique term :buddy** unique term :teen** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :science_fiction** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :musicalQ1600710.1279513800036032
+Q1169280.1279513800036032
+Q2703850.09839898026480909
+Q1847010.06775437746542848
+Q7297820.06447578914976908
+###########################117
+No. of Matches: 0
+done u33259
+sending u96640
+*************************
+** unique term :adventure** unique term :space_western** unique term :action** unique term :science_fiction** unique term :thriller** unique term :biographical** unique term :neo-noir** unique term :superhero** unique term :noir** unique term :crime** unique term :biography** unique term :crime_fiction** unique term :fantasy** unique term :comedy** unique term :parody** unique term :fantastique** unique term :monster** unique term :horror** unique term :swashbuckler** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :mystery** unique term :buddy** unique term :exploitation** unique term :female_buddy** unique term :martial_arts** unique term :musicalQ1884390.1331099368678793
+Q7809810.09603304133735716
+Q58900.0956368584369723
+Q3156640.09230741055103996
+Q13450770.09015162764274305
+###########################39
+Found Matching Book:twenties girl     13
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.14285714285714285
+F1 Score: 0.07407407407407408
+done u96640
+sending u96646
+*************************
+** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :war** unique term :historical** unique term :crime** unique term :crime_fiction** unique term :buddy** unique term :heist** unique term :thriller** unique term :science_fiction** unique term :adventure** unique term :action** unique term :comedy** unique term :horror** unique term :monster** unique term :mystery** unique term :documentary** unique term :docudrama** unique term :fantasy** unique term :fantastique** unique term :girls_with_gunsQ3806670.05
+Q248710.03154036734351768
+Q1622550.026549435319465915
+Q1598700.020539796780863647
+Q1284930.013832535378773245
+###########################83
+Found Matching Book:the watchmen     7
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.14285714285714285
+F1 Score: 0.07407407407407408
+done u96646
+sending u18107
+*************************
+** unique term :romance** unique term :musical** unique term :comedy** unique term :teen** unique term :romantic_comedy** unique term :political_thriller** unique term :war** unique term :historical** unique term :thriller** unique term :biographical** unique term :biography** unique term :adventure** unique term :fantasy** unique term :fantastique** unique term :buddy** unique term :exploitation** unique term :rape_and_revenge** unique term :crime** unique term :crime_fiction** unique term :action** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :horror** unique term :monster** unique term :science_fictionQ2677210.23130528340391765
+Q14215930.23076923076923078
+Q4670760.23076923076923078
+Q537030.19230769230769232
+Q1920730.19230769230769232
+###########################39
+No. of Matches: 0
+done u18107
+sending u18153
+*************************
+** unique term :horror_comedy** unique term :horror** unique term :musical** unique term :comedy** unique term :romance** unique term :comedy_of_remarriage** unique term :romantic_comedy** unique term :fantasy** unique term :fantastique** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :mystery** unique term :spy** unique term :buddy** unique term :crime** unique term :crime_fiction** unique term :science_fiction** unique term :stonerQ6326680.06249999999999999
+Q1743850.045209774981470344
+Q32066150.045209774981470344
+Q4268280.035783098543114976
+Q2171820.03042222522920212
+###########################261
+No. of Matches: 0
+done u18153
+sending u18175
+*************************
+** unique term :adventure** unique term :fantasy** unique term :fantastique** unique term :science_fiction** unique term :horror** unique term :action** unique term :thriller** unique term :swashbuckler** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :biographical** unique term :biography** unique term :documentary** unique term :crime** unique term :crime_fiction** unique term :psychological_horror** unique term :mystery** unique term :war** unique term :historical** unique term :musical** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :exploitation** unique term :rape_and_revengeQ5155280.007565778087076767
+Q14719650.0
+Q7557150.0
+Q58900.0
+Q1065060.0
+###########################154
+No. of Matches: 0
+done u18175
+sending u18163
+*************************
+** unique term :musical** unique term :fantasy** unique term :fantastique** unique term :romance** unique term :thriller** unique term :disaster** unique term :children's** unique term :adventure** unique term :action** unique term :science_fiction** unique term :comedy** unique term :romantic_comedy** unique term :superhero** unique term :teen** unique term :swashbuckler** unique term :buddyQ248710.04489853930233811
+Q2235590.020464957464431832
+Q4844420.01464858269035371
+Q364790.0
+Q6227420.0
+###########################217
+No. of Matches: 0
+done u18163
+sending u115265
+*************************
+** unique term :adventure** unique term :children's** unique term :fantasy** unique term :animated** unique term :fantastique** unique term :comic** unique term :anime** unique term :exploitation** unique term :comedy** unique term :parody** unique term :action** unique term :martial_arts** unique term :horror** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :romance** unique term :musical** unique term :buddy** unique term :horror_comedy** unique term :zombie** unique term :zombie_comedy** unique term :erotic_thriller** unique term :thriller** unique term :monster** unique term :science_fiction** unique term :disasterQ1347730.24393954098197568
+Q8172660.22533543986399562
+Q11325350.20944252106490324
+Q5915560.20944252106490324
+Q2198100.16884175989493458
+###########################313
+No. of Matches: 0
+done u115265
+sending u33632
+*************************
+** unique term :adventure** unique term :action** unique term :science_fiction** unique term :romance** unique term :comedy** unique term :teen** unique term :romantic_comedy** unique term :musical** unique term :horrorQ6432630.3083953863863181
+Q2703850.3083953863863181
+Q10462950.20889608889921604
+Q6837340.20889608889921604
+Q1657130.0
+###########################158
+No. of Matches: 0
+done u33632
+sending u33611
+*************************
+** unique term :heist** unique term :comedy** unique term :crime** unique term :crime_fiction** unique term :western** unique term :buddy** unique term :neo-noir** unique term :noir** unique term :horror** unique term :romance** unique term :war** unique term :historical** unique term :adventure** unique term :science_fiction** unique term :thriller** unique term :teen** unique term :exploitation** unique term :blaxploitation** unique term :musical** unique term :actionQ6356320.20426903812736574
+Q5040530.20426903812736572
+Q2320000.14108434259946262
+Q4312520.13270899437041755
+Q3370780.11285384906062933
+###########################39
+No. of Matches: 0
+done u33611
+sending u33597
+*************************
+** unique term :musical** unique term :monster** unique term :adventure** unique term :action** unique term :science_fiction** unique term :thriller** unique term :buddy** unique term :horror** unique term :fantasy** unique term :fantastique** unique term :comedy** unique term :romance** unique term :teen** unique term :coming-of-age_story** unique term :young-adult_literatureQ1743850.03289254800535735
+Q9340360.032752117521128256
+Q250430.026856652984375368
+Q2539780.025282968182544132
+Q2764070.010542297441717282
+###########################80
+No. of Matches: 0
+done u33597
+sending u115307
+*************************
+** unique term :comedy** unique term :teen** unique term :adventure** unique term :fantasy** unique term :fantastique** unique term :heist** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :science_fiction** unique term :children's** unique term :horror** unique term :buddy** unique term :action** unique term :exploitation** unique term :romance** unique term :martial_arts** unique term :neo-noir** unique term :noir** unique term :girls_with_guns** unique term :documentary** unique term :superhero** unique term :mystery** unique term :horror_comedy** unique term :rape_and_revengeQ1517920.2341301730656823
+Q6491650.2341301730656823
+Q4268280.23413017306568223
+Q44470.18677605071622821
+Q1865720.16871783645470256
+###########################217
+No. of Matches: 0
+done u115307
+sending u18475
+*************************
+** unique term :coming-of-age_story** unique term :romance** unique term :young-adult_literature** unique term :teen** unique term :musical** unique term :war** unique term :historical** unique term :fantasy** unique term :comedy** unique term :fantastique** unique term :romantic_comedy** unique term :exploitation** unique term :action** unique term :martial_artsQ1743850.1378193783075179
+Q4740820.1378193783075179
+Q5064180.10771641940126808
+Q2172500.1
+Q9003620.08189827522751966
+###########################131
+No. of Matches: 0
+done u18475
+sending u115135
+*************************
+** unique term :horror_comedy** unique term :horror** unique term :comedy** unique term :monster** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :romance** unique term :action** unique term :science_fiction** unique term :romantic_comedy** unique term :fantasy** unique term :fantastique** unique term :adventure** unique term :buddy** unique term :biographical** unique term :sports** unique term :biography** unique term :neo-noir** unique term :noir** unique term :crime** unique term :crime_fiction** unique term :war** unique term :historical** unique term :exploitation** unique term :rape_and_revenge** unique term :thrillerQ1091350.16698867770736392
+Q1049050.13692844691536962
+Q23099940.13531545482173737
+Q59300.1352345304532036
+Q14051260.12167863342251257
+###########################34
+No. of Matches: 0
+done u115135
+sending u69807
+*************************
+** unique term :coming-of-age_story** unique term :horror** unique term :young-adult_literature** unique term :teen** unique term :adventure** unique term :comedy** unique term :parody** unique term :science_fiction** unique term :documentary** unique term :buddy** unique term :action** unique term :musical** unique term :mystery** unique term :thriller** unique term :romance** unique term :fantasy** unique term :fantastique** unique term :romantic_comedyQ1984510.14285714285714285
+Q1741530.14285714285714285
+Q2193150.14285714285714285
+Q6359370.13417512143599217
+Q4984420.12443758756915312
+###########################183
+No. of Matches: 0
+done u69807
+sending u84352
+*************************
+** unique term :musical** unique term :comedy** unique term :buddy** unique term :fantasy** unique term :fantastique** unique term :romance** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :action** unique term :swashbuckler** unique term :adventure** unique term :spy** unique term :romantic_comedyQ3091530.3621479433976521
+Q4752930.3621479433976521
+Q5254150.31897085818201903
+Q2079540.318970858182019
+Q1884390.2537089695147152
+###########################291
+No. of Matches: 0
+done u84352
+sending u84397
+*************************
+** unique term :musical** unique term :monster** unique term :horror** unique term :fantasy** unique term :fantastique** unique term :heist** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :science_fiction** unique term :children's** unique term :action** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :comedy** unique term :romance** unique term :psychological_horror** unique term :mystery** unique term :female_buddy** unique term :romantic_comedy** unique term :buddyQ16314370.23484660519481773
+Q77476610.200061145813077
+Q1556530.20006114581307696
+Q12161460.20006114581307696
+Q32066150.19318435341975565
+###########################217
+Found Matching Book:city of ashes     0
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.125
+F1 Score: 0.07142857142857144
+done u84397
+sending u18328
+*************************
+** unique term :musical** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :historical** unique term :war** unique term :action** unique term :science_fiction** unique term :buddy** unique term :neo-noir** unique term :noir** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :adventure** unique term :fantasy** unique term :fantastique** unique term :heistQ2677210.33952082152832747
+Q5064180.3213388634936936
+Q7496880.317975435376694
+Q1930660.317975435376694
+Q2201540.3179754353766939
+###########################117
+No. of Matches: 0
+done u18328
+sending u39860
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :science_fiction** unique term :exploitation** unique term :horror** unique term :rape_and_revenge** unique term :thriller** unique term :action** unique term :fantasy** unique term :fantastique** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teenQ2228000.1557882264055369
+Q11378990.11922609313899603
+Q15817100.06956644314244095
+Q2211090.06956644314244095
+Q795030.06767169023040649
+###########################107
+No. of Matches: 0
+done u39860
+sending u127522
+*************************
+** unique term :action** unique term :science_fiction** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :crime** unique term :crime_fiction** unique term :female_buddy** unique term :buddy** unique term :psychological_horror** unique term :horrorQ1394600.15687761420109858
+Q11292270.13080139935143273
+Q3005550.12815164202898555
+Q593170.12815164202898555
+Q25654200.08293042382623755
+###########################68
+No. of Matches: 0
+done u127522
+sending u131022
+*************************
+** unique term :coming-of-age_story** unique term :horror** unique term :young-adult_literature** unique term :teen** unique term :horror_comedy** unique term :comedy** unique term :adventure** unique term :action** unique term :science_fiction** unique term :romance** unique term :romantic_comedy** unique term :exploitation** unique term :rape_and_revenge** unique term :thriller** unique term :fantasy** unique term :fantastique** unique term :girls_with_guns** unique term :monster** unique term :documentary** unique term :biographical** unique term :biography** unique term :crime** unique term :crime_fiction** unique term :buddyQ25962180.2500878048793719
+Q7500280.2500878048793718
+Q4772990.2500878048793718
+Q18921630.23947349666231324
+Q8544190.23947349666231324
+###########################138
+No. of Matches: 0
+done u131022
+sending u170314
+*************************
+** unique term :female_buddy** unique term :fantasy** unique term :fantastique** unique term :crime** unique term :buddy** unique term :crime_fiction** unique term :neo-noir** unique term :noir** unique term :musical** unique term :comedy** unique term :horror** unique term :documentary** unique term :romance** unique term :teen** unique term :romantic_comedy** unique term :tragicomedy** unique term :coming-of-age_story** unique term :young-adult_literatureQ2233160.34828870004701257
+Q4838520.34828870004701257
+Q1821530.34828870004701257
+Q1050310.34828870004701257
+Q4840480.3097098996385928
+###########################117
+No. of Matches: 0
+done u170314
+sending u170322
+*************************
+** unique term :musical** unique term :monster** unique term :romance** unique term :comedy** unique term :teen** unique term :romantic_comedy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :buddy** unique term :heist** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :science_fiction** unique term :biography** unique term :horror** unique term :fantasy** unique term :fantastique** unique term :neo-noir** unique term :action** unique term :noir** unique term :biographical** unique term :sportsQ1598700.05422881841618934
+Q1886520.041666666666666664
+Q6326680.02800102411622939
+Q233950.025629725820934503
+Q2677210.023863438742844075
+###########################117
+No. of Matches: 0
+done u170322
+sending u131031
+*************************
+** unique term :horror** unique term :monster** unique term :science_fiction** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :horror_comedy** unique term :action** unique term :thriller** unique term :buddy** unique term :exploitation** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :martial_arts** unique term :war** unique term :historicalQ11417460.17820820892841333
+Q13450770.12475805879344838
+Q3768070.12475805879344838
+Q8607340.11679189982379042
+Q3808410.10677963749984187
+###########################39
+No. of Matches: 0
+done u131031
+sending u170304
+*************************
+** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :adventure** unique term :action** unique term :science_fiction** unique term :thriller** unique term :buddy** unique term :comedy** unique term :western** unique term :neo-noir** unique term :noir** unique term :fantasy** unique term :fantastique** unique term :monster** unique term :biographical** unique term :musical** unique term :biography** unique term :war** unique term :historical** unique term :swashbuckler** unique term :teenQ2676720.08464351626498229
+Q1835550.05382816564761587
+Q3286950.04890597397373755
+Q1927240.04890597397373755
+Q6960420.04890597397373755
+###########################125
+No. of Matches: 0
+done u170304
+sending u72076
+*************************
+** unique term :documentary** unique term :western** unique term :horror_comedy** unique term :horror** unique term :musical** unique term :comedy** unique term :fantasy** unique term :action** unique term :fantastique** unique term :swashbuckler** unique term :exploitation** unique term :thriller** unique term :martial_arts** unique term :crime** unique term :buddy** unique term :crime_fiction** unique term :romance** unique term :teen** unique term :romantic_comedy** unique term :coming-of-age_story** unique term :young-adult_literatureQ542740.1396528104223719
+Q7644720.11571140400406964
+Q3138840.10391055563845081
+Q1884390.08279270916152195
+Q16324250.07307621514912939
+###########################168
+No. of Matches: 0
+done u72076
+sending u39949
+*************************
+** unique term :fantasy** unique term :fantastique** unique term :children's** unique term :comedy** unique term :buddy** unique term :romance** unique term :romantic_comedy** unique term :musical** unique term :teen** unique term :science_fiction** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :horror** unique term :superhero** unique term :action** unique term :adventure** unique term :parodyQ5064180.18300801574107303
+Q6227420.1730943203557502
+Q7496240.13976098702241688
+Q1865720.13976098702241688
+Q2789970.13976098702241688
+###########################217
+Found Matching Book:a wind in the door     12
+No. of Matches: 1
+Precision: 0.05
+Recall: 0.1111111111111111
+F1 Score: 0.06896551724137932
+done u39949
+sending u45287
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :fantasy** unique term :action** unique term :fantastique** unique term :swashbuckler** unique term :biographical** unique term :war** unique term :historical** unique term :biography** unique term :science_fiction** unique term :neo-noir** unique term :mystery** unique term :heist** unique term :noir** unique term :crime** unique term :crime_fiction** unique term :children's** unique term :documentary** unique term :musical** unique term :buddy** unique term :horror_comedy** unique term :horror** unique term :zombie** unique term :zombie_comedy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teenQ4858030.11463513252511667
+Q4740820.11463513252511667
+Q1616780.08429043724553008
+Q1556530.08020436284788941
+Q467170.07136469621447518
+###########################221
+No. of Matches: 0
+done u45287
+sending u102988
+*************************
+** unique term :adventure** unique term :children's** unique term :fantasy** unique term :animated** unique term :fantastique** unique term :comic** unique term :anime** unique term :musical** unique term :action** unique term :swashbuckler** unique term :horror** unique term :teen** unique term :science_fiction** unique term :horror_comedy** unique term :comedy** unique term :zombie** unique term :buddy** unique term :zombie_comedy** unique term :thriller** unique term :monster** unique term :disasterQ4985770.0
+Q364790.0
+Q467170.0
+Q2160060.0
+Q5155280.0
+###########################11
+No. of Matches: 0
+done u102988
+sending u45216
+*************************
+** unique term :adventure** unique term :action** unique term :science_fiction** unique term :thriller** unique term :war** unique term :historical** unique term :horror** unique term :swashbuckler** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :fantasy** unique term :fantastique** unique term :documentary** unique term :horror_comedy** unique term :zombie** unique term :buddy** unique term :zombie_comedy** unique term :crime** unique term :crime_fiction** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teenQ15001410.1983252559651751
+Q2198100.17145204795635036
+Q2210750.16947340758726537
+Q1447560.16947340758726537
+Q4862390.16947340758726537
+###########################138
+No. of Matches: 0
+done u45216
+sending u102940
+*************************
+** unique term :war** unique term :historical** unique term :comedy** unique term :biographical** unique term :biography** unique term :musical** unique term :romance** unique term :thriller** unique term :disaster** unique term :adventure** unique term :romantic_comedy** unique term :science_fiction** unique term :fantasy** unique term :fantastique** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :horror** unique term :slasher** unique term :sports** unique term :buddy** unique term :actionQ2064970.18366199472247324
+Q184070.18366199472247324
+Q9498790.18366199472247324
+Q1049050.17774147424930098
+Q2201540.17532294814804847
+###########################117
+No. of Matches: 0
+done u102940
+sending u45268
+*************************
+** unique term :action** unique term :thriller** unique term :science_fiction** unique term :comedy** unique term :buddy** unique term :neo-noir** unique term :noir** unique term :crime** unique term :crime_fiction** unique term :romance** unique term :romantic_comedy** unique term :biography** unique term :musical** unique term :horror** unique term :biographical** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :fantasy** unique term :fantastiqueQ1810860.1616694748445037
+Q3370780.1281159536875391
+Q2207410.11530770128257657
+Q2121230.10691918438071155
+Q1548170.10650028429996262
+###########################39
+No. of Matches: 0
+done u45268
+sending u170154
+*************************
+** unique term :adventure** unique term :coming-of-age_story** unique term :children's** unique term :fantasy** unique term :musical** unique term :young-adult_literature** unique term :fantastique** unique term :teen** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :action** unique term :swashbuckler** unique term :heist** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :science_fiction** unique term :biographical** unique term :biography** unique term :exploitation** unique term :martial_arts** unique term :westernQ5064180.2734166518130678
+Q7496880.19817784153011203
+Q7417370.19817784153011203
+Q8130570.1944375116290396
+Q467170.16746439775125682
+###########################221
+No. of Matches: 0
+done u170154
+sending u168577
+*************************
+** unique term :comedy** unique term :adventure** unique term :parody** unique term :science_fiction** unique term :romance** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :romantic_comedy** unique term :fantasy** unique term :fantastique** unique term :thriller** unique term :disaster** unique term :buddy** unique term :musical** unique term :action** unique term :heist** unique term :crime** unique term :crime_fictionQ2018190.042055387399076195
+Q2446040.042055387399076195
+Q4984420.03270307149357538
+Q445780.018308289233929343
+Q17592600.008817355986557177
+###########################39
+No. of Matches: 0
+done u168577
+sending u57685
+*************************
+** unique term :mystery** unique term :comedy** unique term :western** unique term :musical** unique term :horror** unique term :fantasy** unique term :fantastique** unique term :romance** unique term :war** unique term :historical** unique term :thriller** unique term :disaster** unique term :teen** unique term :romantic_comedy** unique term :buddy** unique term :action** unique term :swashbuckler** unique term :children's** unique term :science_fiction** unique term :biographical** unique term :biography** unique term :coming-of-age_story** unique term :young-adult_literatureQ2677210.040682934892973845
+Q10462950.0346210669963927
+Q8172660.03438312335197181
+Q1863230.029571705658204387
+Q11397940.0247275118380717
+###########################117
+No. of Matches: 0
+done u57685
+sending u72203
+*************************
+** unique term :coming-of-age_story** unique term :musical** unique term :young-adult_literature** unique term :comedy** unique term :teen** unique term :buddy** unique term :adventure** unique term :action** unique term :science_fiction** unique term :fantasy** unique term :fantastique** unique term :romance** unique term :romantic_comedy** unique term :biographical** unique term :erotic_thriller** unique term :thriller** unique term :biography** unique term :horrorQ1905880.20869661468440193
+Q4840480.20869661468440193
+Q1050310.18445603091787113
+Q193550.18445603091787113
+Q397220.18366070126878256
+###########################107
+No. of Matches: 0
+done u72203
+sending u102857
+*************************
+** unique term :heist** unique term :comedy** unique term :crime** unique term :buddy** unique term :crime_fiction** unique term :horror** unique term :action** unique term :monster** unique term :science_fiction** unique term :erotic** unique term :thrillerQ2639300.12440655743640339
+Q477030.08333333333333333
+Q626650.05422703399957295
+Q9097490.036841352376336865
+Q11225710.0
+###########################12
+No. of Matches: 0
+done u102857
+sending u45623
+*************************
+** unique term :adventure** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :comedy** unique term :romance** unique term :romantic_comedy** unique term :horror_comedy** unique term :horror** unique term :zombie** unique term :zombie_comedy** unique term :coming-of-age_story** unique term :musical** unique term :young-adult_literature** unique term :teen** unique term :science_fiction** unique term :action** unique term :buddyQ1518980.3619747234806834
+Q2201540.31878822677070123
+Q2013790.31878822677070123
+Q2449750.31878822677070123
+Q1905880.3187882267707012
+###########################117
+No. of Matches: 0
+done u45623
+sending u57762
+*************************
+** unique term :action** unique term :science_fiction** unique term :musical** unique term :crime** unique term :crime_fiction** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :buddy** unique term :documentary** unique term :docudrama** unique term :fantasy** unique term :fantastique** unique term :horror_comedy** unique term :horror** unique term :thriller** unique term :slasher** unique term :teenQ9219850.20093750179863978
+Q1085860.19761115154804196
+Q2388660.1780609038211843
+Q10481660.15383143633078294
+Q14188810.1162103957709571
+###########################39
+No. of Matches: 0
+done u57762
+sending u170099
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :horror_comedy** unique term :horror** unique term :parody** unique term :zombie** unique term :fantastique** unique term :buddy** unique term :zombie_comedy** unique term :comedy_of_remarriage** unique term :thriller** unique term :coming-of-age_story** unique term :children's** unique term :young-adult_literature** unique term :teen** unique term :documentary** unique term :docudrama** unique term :fantasy** unique term :erotic** unique term :crime** unique term :crime_fiction** unique term :biographical** unique term :biographyQ14372610.0
+Q8587240.0
+Q3370780.0
+Q2082690.0
+Q2103640.0
+###########################189
+No. of Matches: 0
+done u170099
+sending u96802
+*************************
+** unique term :comedy** unique term :buddy** unique term :science_fiction** unique term :adventure** unique term :fantasy** unique term :fantastique** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :horror** unique term :action** unique term :swashbuckler** unique term :heist** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :romance** unique term :musical** unique term :romantic_comedy** unique term :disaster** unique term :monster** unique term :exploitation** unique term :martial_artsQ4838150.18771823864990028
+Q4904640.17468481511366526
+Q812050.16272793248495537
+Q12121390.15710581825433664
+Q2064970.14260408643185596
+###########################39
+No. of Matches: 0
+done u96802
+sending u168629
+*************************
+** unique term :adventure** unique term :children's** unique term :comedy** unique term :buddy** unique term :romance** unique term :romantic_comedy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :crime** unique term :teen** unique term :crime_fiction** unique term :fantasy** unique term :fantastique** unique term :political_thriller** unique term :war** unique term :historical** unique term :thriller** unique term :action** unique term :exploitation** unique term :martial_arts** unique term :science_fiction** unique term :western** unique term :spyQ6090910.3479825864584876
+Q3116380.3157232192932144
+Q2064970.30036353883944
+Q12109470.30036353883944
+Q1050310.30036353883944
+###########################39
+No. of Matches: 0
+done u168629
+sending u102709
+*************************
+** unique term :mystery** unique term :crime** unique term :crime_fiction** unique term :coming-of-age_story** unique term :romance** unique term :young-adult_literature** unique term :teen** unique term :horror_comedy** unique term :horror** unique term :musical** unique term :comedy** unique term :war** unique term :historical** unique term :thriller** unique term :fantasy** unique term :fantastique** unique term :romantic_comedy** unique term :heist** unique term :buddy** unique term :western** unique term :spaghetti_westernQ2434390.1
+Q2213840.1
+Q2025480.07573667450976282
+Q2081080.07573667450976282
+Q7519210.07520679869581332
+###########################172
+No. of Matches: 0
+done u102709
+sending u72332
+*************************
+** unique term :mystery** unique term :comedy** unique term :western** unique term :horror_comedy** unique term :horror** unique term :musical** unique term :adventure** unique term :action** unique term :science_fiction** unique term :biographical** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :biography** unique term :teen** unique term :romance** unique term :romantic_comedy** unique term :fantasy** unique term :fantastique** unique term :female_buddy** unique term :buddyQ915400.18446878727156488
+Q2063360.15962787649085314
+Q7701580.15203699281626282
+Q1093310.14710467258856985
+Q4631010.0881993050622817
+###########################100
+No. of Matches: 0
+done u72332
+sending u57854
+*************************
+** unique term :horror_comedy** unique term :romance** unique term :horror** unique term :comedy** unique term :parody** unique term :zombie** unique term :fantastique** unique term :romantic_comedy** unique term :buddy** unique term :zombie_comedy** unique term :fantasy** unique term :action** unique term :crime** unique term :crime_fiction** unique term :war** unique term :historical** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :documentary** unique term :heist** unique term :exploitation** unique term :thriller** unique term :martial_arts** unique term :girls_with_gunsQ7478770.07692307692307693
+Q729620.07692307692307693
+Q1653250.07692307692307693
+Q7297880.06023678983729801
+Q9076400.02247905507946611
+###########################11
+No. of Matches: 0
+done u57854
+sending u127121
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :teen** unique term :heist** unique term :crime** unique term :thriller** unique term :crime_fiction** unique term :disaster** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :sportsQ7496880.37091493891126925
+Q4920930.37091493891126925
+Q7198230.2800058480021783
+Q24087130.2800058480021783
+Q10468410.23893199111488894
+###########################39
+No. of Matches: 0
+done u127121
+sending u127111
+*************************
+** unique term :musical** unique term :monster** unique term :horror** unique term :science_fiction** unique term :comedy** unique term :buddy** unique term :thriller** unique term :action** unique term :adventure** unique term :fantasy** unique term :fantastique** unique term :psychological_horror** unique term :biography** unique term :horror_comedy** unique term :romance** unique term :romantic_comedy** unique term :war** unique term :historical** unique term :animated** unique term :comic** unique term :animeQ5064180.23644593711561038
+Q1644170.23644593711561038
+Q4268280.22981009308158498
+Q15130170.21975684761222225
+Q6326680.20148955929357226
+###########################318
+No. of Matches: 0
+done u127111
+sending u72442
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :musical** unique term :fantasy** unique term :fantastique** unique term :erotic** unique term :teen** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :biographical** unique term :war** unique term :historical** unique term :biographyQ4920930.21198188111058244
+Q7496880.21198188111058244
+Q13273700.21198188111058244
+Q2228000.140553309682011
+Q9183800.140553309682011
+###########################117
+No. of Matches: 0
+done u72442
+sending u57436
+*************************
+** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :musical** unique term :biographical** unique term :biography** unique term :romance** unique term :comedy** unique term :fantasy** unique term :fantastique** unique term :horror** unique term :children's** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :documentary** unique term :horror_comedy** unique term :zombie** unique term :zombie_comedy** unique term :buddy** unique term :romantic_comedyQ1556530.181479775447488
+Q3203840.1698026339492125
+Q3351600.15789473684210525
+Q8974290.15452052646766323
+Q2198100.14926988988504578
+###########################313
+No. of Matches: 0
+done u57436
+sending u170769
+*************************
+** unique term :musical** unique term :monster** unique term :adventure** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :action** unique term :swashbuckler** unique term :biographical** unique term :biography** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :science_fiction** unique term :buddyQ2449750.143889900761732
+Q1644170.1356652118383381
+Q6819180.1336625155092759
+Q7854060.11570637670792182
+Q248710.05857879129637646
+###########################158
+No. of Matches: 0
+done u170769
+sending u84829
+*************************
+** unique term :romance** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :fantasy** unique term :action** unique term :fantastique** unique term :swashbuckler** unique term :exploitation** unique term :comedy** unique term :martial_arts** unique term :adventure** unique term :buddy** unique term :horror** unique term :musical** unique term :horror_comedy** unique term :zombie** unique term :zombie_comedy** unique term :romantic_comedy** unique term :science_fiction** unique term :thriller** unique term :girls_with_gunsQ467170.24179065488179868
+Q1610870.24179065488179868
+Q5064180.21674252331674526
+Q1743850.20211426351289669
+Q6227420.20211426351289669
+###########################217
+No. of Matches: 0
+done u84829
+sending u69062
+*************************
+** unique term :mystery** unique term :horror** unique term :thriller** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :psychological_horror** unique term :fantasy** unique term :fantastique** unique term :adventure** unique term :science_fiction** unique term :exploitation** unique term :action** unique term :martial_arts** unique term :musicalQ1821530.1252893979045772
+Q1347730.11921199925393632
+Q47382630.09580540570382834
+Q5812010.07509574776014911
+Q1884390.07508081548823575
+###########################291
+No. of Matches: 0
+done u69062
+sending u69005
+*************************
+** unique term :fantasy** unique term :fantastique** unique term :exploitation** unique term :horror** unique term :rape_and_revenge** unique term :thriller** unique term :science_fiction** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :comedy** unique term :superhero** unique term :parody** unique term :action** unique term :mystery** unique term :children's** unique term :romance** unique term :romantic_comedyQ6432630.17936090320129625
+Q5064180.17055481712372567
+Q7852490.15595330013015613
+Q44470.14725320156225438
+Q465510.10985003404047801
+###########################208
+No. of Matches: 0
+done u69005
+sending u127974
+*************************
+** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :neo-noir** unique term :noir** unique term :crime** unique term :crime_fiction** unique term :thriller** unique term :slapstick** unique term :satire** unique term :disaster** unique term :mystery** unique term :erotic_thriller** unique term :erotic** unique term :documentary** unique term :fantasy** unique term :fantastiqueQ8604790.39098104016963126
+Q9351050.31405796324655444
+Q9450740.31405796324655433
+Q5721650.31405796324655433
+Q2334640.18882496865490198
+###########################117
+No. of Matches: 0
+done u127974
+sending u170672
+*************************
+** unique term :horror_comedy** unique term :horror** unique term :comedy** unique term :monster** unique term :adventure** unique term :children's** unique term :action** unique term :thriller** unique term :buddy** unique term :science_fiction** unique term :romance** unique term :romantic_comedy** unique term :fantasy** unique term :fantastique** unique term :heist** unique term :crime** unique term :crime_fictionQ2191500.3207495775342889
+Q3861640.2865337252526093
+Q3276040.2865337252526093
+Q4862390.2865337252526093
+Q12160300.2865337252526093
+###########################138
+No. of Matches: 0
+done u170672
+sending u72543
+*************************
+** unique term :adventure** unique term :coming-of-age_story** unique term :children's** unique term :fantasy** unique term :musical** unique term :young-adult_literature** unique term :fantastique** unique term :teen** unique term :horror** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :documentary** unique term :docudramaQ2780530.0
+Q3189100.0
+Q6762840.0
+Q4862390.0
+Q12575990.0
+###########################168
+No. of Matches: 0
+done u72543
+sending u170682
+*************************
+** unique term :adventure** unique term :action** unique term :monster** unique term :science_fiction** unique term :thriller** unique term :spy** unique term :romance** unique term :horror** unique term :crime** unique term :crime_fiction** unique term :fantasy** unique term :fantastique** unique term :comedy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :biographical** unique term :biography** unique term :neo-noir** unique term :noirQ11226880.2177155937404849
+Q8427700.1459513154384058
+Q11272810.14367160994200162
+Q4299340.14276950363261845
+Q3138740.11620775724692442
+###########################34
+No. of Matches: 0
+done u170682
+sending u57555
+*************************
+** unique term :horror** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :horror_comedy** unique term :musical** unique term :comedy** unique term :romance** unique term :adventure** unique term :fantasy** unique term :fantastique** unique term :children's** unique term :romantic_comedy** unique term :science_fiction** unique term :tragicomedyQ5064180.35023052628156376
+Q4268280.3425821982801006
+Q2029820.30321111242905335
+Q2025080.30321111242905335
+Q7519210.27923280523506394
+###########################172
+No. of Matches: 0
+done u57555
+sending u170628
+*************************
+** unique term :action** unique term :adventure** unique term :science_fiction** unique term :thriller** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :horror_comedy** unique term :horror** unique term :comedy** unique term :teen** unique term :exploitation** unique term :coming-of-age_story** unique term :romance** unique term :young-adult_literature** unique term :martial_arts** unique term :swashbuckler** unique term :biographical** unique term :biographyQ177380.2802004158657354
+Q145224930.24389254935758212
+Q1880350.24389254935758212
+Q27507480.24389254935758212
+Q834950.22516668401779052
+###########################177
+No. of Matches: 0
+done u170628
+sending u69152
+*************************
+** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :science_fiction** unique term :war** unique term :historical** unique term :buddy** unique term :thriller** unique term :disaster** unique term :fantasy** unique term :musical** unique term :fantastique** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :female_buddy** unique term :actionQ4920930.24935946974133744
+Q5758480.2302938563152886
+Q32347560.1993594697413375
+Q23557870.19935946974133745
+Q5074900.16103062765093779
+###########################39
+No. of Matches: 0
+done u69152
+sending u39511
+*************************
+** unique term :musical** unique term :monster** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :adventure** unique term :parody** unique term :science_fiction** unique term :teen** unique term :horror** unique term :fantasy** unique term :fantastique** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :action** unique term :thrillerQ1347730.07206833690523817
+Q11627280.0380734310853524
+Q2677210.015753958613076716
+Q832870.0
+Q3223280.0
+###########################0
+No. of Matches: 0
+done u39511
+sending u127883
+*************************
+** unique term :adventure** unique term :science_fiction** unique term :action** unique term :fantasy** unique term :fantastique** unique term :swashbuckler** unique term :thriller** unique term :musical** unique term :children's** unique term :buddy** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :superhero** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :exploitation** unique term :martial_arts** unique term :romance** unique term :comedy** unique term :romantic_comedy** unique term :parody** unique term :sports** unique term :horror_comedy** unique term :horror** unique term :zombie** unique term :zombie_comedy** unique term :war** unique term :historical** unique term :spyQ49943580.24448710719105823
+Q1598700.24448710719105823
+Q1519040.24448710719105823
+Q1059930.24448710719105823
+Q1921420.22006688093973514
+###########################125
+No. of Matches: 0
+done u127883
+sending u45712
+*************************
+** unique term :fantasy** unique term :fantastique** unique term :action** unique term :thriller** unique term :science_fiction** unique term :adventure** unique term :swashbuckler** unique term :romance** unique term :comedy** unique term :buddy** unique term :heist** unique term :crime** unique term :crime_fiction** unique term :teen** unique term :romantic_comedyQ1022250.3993326661638961
+Q1616780.38243836574509776
+Q1616870.38243836574509776
+Q1022440.33976062455560674
+Q1024380.33976062455560674
+###########################246
+No. of Matches: 0
+done u45712
+sending u45776
+*************************
+** unique term :musical** unique term :coming-of-age_story** unique term :female_buddy** unique term :young-adult_literature** unique term :comedy** unique term :teen** unique term :buddy** unique term :adventure** unique term :romance** unique term :romantic_comedy** unique term :science_fiction** unique term :children's** unique term :fantasy** unique term :fantastique** unique term :biographical** unique term :biography** unique term :war** unique term :historical** unique term :action** unique term :superheroQ10462950.05091769009408965
+Q1884390.04786777879939082
+Q401190.04518363343378433
+Q1829440.040970356915656266
+Q4028180.040970356915656266
+###########################117
+No. of Matches: 0
+done u45776
+sending u170551
+*************************
+** unique term :political_thriller** unique term :thriller** unique term :spy** unique term :romance** unique term :fantasy** unique term :fantastique** unique term :biographical** unique term :musical** unique term :biography** unique term :comedy** unique term :romantic_comedy** unique term :buddy** unique term :adventure** unique term :action** unique term :science_fiction** unique term :coming-of-age_story** unique term :young-adult_literature** unique term :teen** unique term :crime** unique term :crime_fiction** unique term :documentary** unique term :docudrama** unique term :neo-noir** unique term :noirQ11218780.24536686829188845
+Q3799940.2158602956922446
+Q599310.2158602956922446
+Q11591990.20971169183697597
+Q11397940.20403414627376387
+###########################117
+No. of Matches: 0
+done u170551
+sending u144199
+*************************
+** unique term :action** unique term :thriller** unique term :buddy** unique term :war** unique term :historical** unique term :comedy** unique term :western** unique term :fantasy** unique term :fantastique** unique term :horror** unique term :crime** unique term :crime_fiction** unique term :romance** unique term :neo-noir** unique term :noirQ9401390.07142857142857142
+Q2114290.07142857142857142
+Q1336540.03933900307352547
+Q5097990.0
+Q1537230.0
+###########################63
+No. of Matches: 0
+done u144199
+sending u72678
+*************************
+** unique term :fantasy** unique term :action** unique term :fantastique** unique term :swashbuckler** unique term :thriller** unique term :science_fiction** unique term :war** unique term :historical** unique term :adventure** unique term :romance** unique term :comedy** unique term :tragicomedy** unique term :romantic_comedy** unique term :neo-noir** unique term :noir** unique term :crime** unique term :crime_fiction** unique term :disaster** unique term :buddy** unique term :coming-of-age_story** unique term :children's** unique term :musical** unique term :young-adult_literature** unique term :teen** unique term :space_westernQ2780530.03039753405219333
+Q467170.0
+Q58900.0
+Q2434390.0
+Q6731950.0
+###########################224
+No. of Matches: 0
+done u72678
+sending u170588

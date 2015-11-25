@@ -139,7 +139,7 @@ public class WikiToDBpedia {
 			text=text.concat(itr.next()+" ");  
 			System.out.println("*******Cleaned *****"+text);
 			line=line.concat(" "+text);
-	    	 System.out.println("===============>"+line);
+	    //	 System.out.println("===============>"+line);
 			// bw.write();
 
 	    	 bw.write(line);

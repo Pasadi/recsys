@@ -12,10 +12,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.lang3.ArrayUtils;
+
 
 public class Initialize {
 	public static List<Book> bookData=new ArrayList<>();
     public static	Map<String,Integer> popularity=new HashMap<>();
+    
 
 	/**
 	 * @param args
@@ -55,8 +58,7 @@ public class Initialize {
 				 
 			  
 			}else{
-			 	System.out.println("adding"+arr[0]);
-				abc.add(arr);
+ 				abc.add(arr);
 			}
 			
 			prev=arr[0];
@@ -111,7 +113,7 @@ public class Initialize {
         	Set<String> duplicates=new HashSet<>();//remove duplicates
             String[] genreArray=arr[2].split("\\s+");
     		for(String element:genreArray){
-    			if(element.equals("")||element.equals(" ")||element==null||element.equals("[ ]+"))
+    			if(element.equals("")||element.equals(" ")||element==null||element.equals("[ ]+")||element.equals("fantasy_literature"))
     				continue;
     			duplicates.add(element);
     		}
@@ -138,6 +140,9 @@ public class Initialize {
             	 authors[i]=authors[i].trim();
              }
                    b.setAuthors(authors);
+                   
+                   b.setAllTerms(ArrayUtils.addAll(b.getBookTerms(), b.getAuthors()));
+                //   System.out.println(Arrays.toString(b.getAllTerms()));
                    bookData.add(b);
         }		
     	 br.close();
@@ -153,7 +158,7 @@ public class Initialize {
 		while((s=br.readLine())!=null){
 			String[]arr=s.split("	");
 			popularity.put(arr[0], Integer.parseInt(arr[1]));
-		    System.out.println("~~~~~~~~~~~~~~~~~~~"+popularity.get(arr[0]));
+		  //  System.out.println("~~~~~~~~~~~~~~~~~~~"+popularity.get(arr[0]));
 	}
 		br.close();
 		fd.close();

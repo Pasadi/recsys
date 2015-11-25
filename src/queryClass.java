@@ -38,7 +38,7 @@ public class queryClass {
 	static Map<String, ArrayList<Integer>> bookVector= new HashMap<String, ArrayList<Integer>>(10000);
 	static List<Movie> userProfile=new ArrayList<>();
 	 static List<Book> bookData=new ArrayList<>();
-		static List<Book> Recommendations=new ArrayList<>();
+	
 
 public queryClass() throws FileNotFoundException{
 	System.out.println("constructor");
@@ -68,11 +68,11 @@ public queryClass() throws FileNotFoundException{
 	Query query = QueryFactory.create(queryString1);
 	QueryEngineHTTP qexec = QueryExecutionFactory.createServiceRequest(service, query);
  	ResultSet results = qexec.execSelect();
- 	 System.out.println("************");
+ 	// System.out.println("************");
  	for ( ; results.hasNext() ; ) {
      QuerySolution soln = results.nextSolution() ;
     wikiLink=soln.getResource("link").toString();
-   System.out.println(wikiLink);
+  // System.out.println(wikiLink);
 	
 	String abc[]=wikiLink.split("http://wikidata.org/entity/");
 		String queryString3="PREFIX wd: <http://www.wikidata.org/entity/> " +
@@ -165,8 +165,7 @@ if(element.equals("literature")||element.equals("drama film")||element.equals("d
 		}
 		text=text.concat("#"+text1);
 		//text=text.trim();
-		System.out.println(text+"~~~~~~~~~~~~~~~~~~~~~~~");
- 	 if(text.equals("")||text==null) 
+  	 if(text.equals("")||text==null) 
 		 continue;
 		 else
 		  movies.put(abc[1], text);
@@ -194,64 +193,53 @@ if(element.equals("literature")||element.equals("drama film")||element.equals("d
  	 
       bs.tfIdfCalculator(bookData);
 	   bs.getCosineSimilarityMy(bookData, userProfile);
-	  // bs.jaccard(bookData, userProfile);
- 
+	//  bs.jaccard(bookData, userProfile);
+	   List<Book> Recommendations=new ArrayList<>();
 	 Recommendations=  createUserProfile(bookData);
+	
 //	  
 //		 
-	 Iterator<Book> itr=Recommendations.iterator();
-//	 while(itr.hasNext()){
-//		Book b= itr.next();
-//		System.out.println("======================>>>>"+b.book+"	"+b.similarity+"         "+Arrays.toString(b.authors)+"   "+Arrays.toString(b.bookTerms));
-//	//String a="======================>>>>"+b.book+"         "+b.similarity;
-//	 
-//	 }
+	 
 	 return Recommendations;
-//	    for(Movie m:userProfile){
-//	    	
-//	    	String queryString3="PREFIX wd: <http://www.wikidata.org/entity/> " +
-//	    			"PREFIX sc: <http://schema.org/>" +
-//	    			"PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" +
-//	    			"PREFIX wdt: <http://www.wikidata.org/prop/direct/>" +
-//	    			"SELECT  distinct (STR(?moviename) AS ?movie) (group_concat(?genreinstance ; separator = ':') AS ?genre) (group_concat(?genreinstance1 ; separator = ':') AS ?genre1) WHERE {" +
-//	     			"wd:"+m.getMovieName()+" wd:P136c ?fgenre,?fgenre1  ;" +
-//	    					"rdfs:label ?moviename ." +
-//	    		         	"FILTER (LANG(?moviename)= 'en' )" +
-//	    		         	"OPTIONAL{"+
-//	    					"?fgenre (wd:P31c|wd:P279c)* ?genreins  ." +
-//	    					"?genreins wd:P31c wd:Q201658 ." +
-//	    					"?genreins  rdfs:label ?genreinstance ." +
-//	    		         	"FILTER (LANG(?genreinstance)= 'en' )" 
-//	    		         	+"}" +
-//	    		         	"OPTIONAL{"+
-//	    					"?fgenre1 (wd:P31c|wd:P279c)* ?genreins1  ." +
-//	    					"?genreins1 wd:P31c wd:Q223393 ." +
-//	    					"?genreins1  rdfs:label ?genreinstance1 ." +
-//	    		         	"FILTER (LANG(?genreinstance1)= 'en' )" 
-//	    		         	+"}" +
-//	    		"}"+
-//	    		"group by ?moviename";
-//	    	
-//	    	
-//	    	
-//	    	
-//	    	
-//	    }
-	
+ 
 
  	}
 //	
-	 public static List<Book> getUserProfile(List<Book> myList){
+	 public static List<Book> getUserProfile(List<Book> myList) throws IOException{
 		 List<Book> myListNew=new ArrayList<>();
  		    Collections.sort(myList, new OverallSimilarity1());
 		    	for(Book b:myList){
- 		    	 if(b.getSimilarity()>0.0)
+		    		File f =new File("books_id_wiki.txt");
+	 		   		
+ 					String x;
+ 					 
+ 						FileReader fr=new FileReader(f.getAbsolutePath());
+ 						BufferedReader br=new BufferedReader(fr);
+ 						at:
+ 					while((x=br.readLine())!=null){
+ 						String[] arr=x.split("	");
+ 								if(arr[1].equals(b.getBookName())){
+ 		 						
+ 								b.setId(arr[0]);
+ 								break at;
+ 							}
+ 					}
+ 						br.close();
+ 						fr.close();
+ 	        
+  		    	 if(b.getSimilarity()>0.0 && Initialize.popularity.containsKey(b.getId())){
+ 		    		if(Initialize.popularity.get(b.getId())>1)
 		    		 myListNew.add(b);
+ 		    	 }
 		    	}
+		    	
 		    	System.out.println("###########################"+myListNew.size());
-		    	return myListNew.subList(0, 100);
+		    	if(myListNew.size()>20)
+		    	return myListNew.subList(0, 20);
+		    	else
+		    		return myListNew;
     }
-			public static List<Book> createUserProfile(List<Book> myList){
+			public static List<Book> createUserProfile(List<Book> myList) throws IOException{
 				 
 				 return getUserProfile(myList);
 				}

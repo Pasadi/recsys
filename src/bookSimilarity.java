@@ -147,8 +147,7 @@ public void parseUserProfile(List<Movie> userProfile) throws FileNotFoundExcepti
                    tfidf = tf  *idf ;
                    
                    tfidfvectors[count] = tfidf;
-                   if(m.book.equals("crime and punishment"))
-                       System.out.println(":"+tfidf);
+              
                    count++;
                }
                m.setTfVector(tfidfvectors);
@@ -211,35 +210,48 @@ public void parseUserProfile(List<Movie> userProfile) throws FileNotFoundExcepti
     }
     public void jaccard(List<Book> bookData, List<Movie> userProfile){
  	   for(Book singleBook:bookData){
- 		   singleBook.setSimilarity(0.0);
-		   Set<String>  s1 = new HashSet<>(),u,i ;
+		   Set<String>  bookGenre = new HashSet<>(),u,i,u1,i1 ;
+		   Set<String>  bookAuthor = new HashSet<>();
  		   for(String s:singleBook.getBookTerms()){
-			   s1.add(s);
+			   bookGenre.add(s);
 		   }
-		   
-		   double indSim=0.0;
+ 		  for(String s:singleBook.getAuthors()){
+			   bookAuthor.add(s);
+		   }
+ 		   double indSimGenre=0.0;
+ 		   double indSimAuthor=0.0;
+ 		   double indSim=0.0;
 		   int count=0;
 		   for(Movie singleMovie:userProfile){
 			   count++;
-			  Set<String> s2 = new HashSet<>();
+			  Set<String> movieGenre = new HashSet<>();
+			  Set<String> movieAuthor = new HashSet<>();
+
 			  for(String m:singleMovie.getMovieTerms()){
-				   s2.add(m);
+				   movieGenre.add(m);
+			   }
+			  for(String m:singleMovie.getAuthors()){
+				   movieAuthor.add(m);
 			   }
 			   u = new HashSet<>();
-			      u.addAll(s1);
-			      u.addAll(s2);
+			      u.addAll(bookGenre);
+			      u.addAll(movieGenre);
 			     i = new HashSet<>();
-			      i.addAll(s1);
-			      i.retainAll(s2);
-			      indSim= (double) i.size() / (double) u.size();
-			   if(singleBook.getSimilarity()<indSim) {
-				   singleBook.setSimilarity(indSim);
-			   } 	
-
+			      i.addAll(bookGenre);
+			      i.retainAll(movieGenre);
+			      indSimGenre= 0.5*((double) i.size() / (double) u.size());
+			      u1 = new HashSet<>();
+			      u1.addAll(bookGenre);
+			      u1.addAll(movieGenre);
+			     i1 = new HashSet<>();
+			      i1.addAll(bookGenre);
+			      i1.retainAll(movieGenre);
+			      indSimAuthor= 0.5*((double) i1.size() / (double) u1.size());
+			      indSim+=(indSimAuthor+indSimGenre)*0.5;
  		   }
-	// double overallSimilarity=indSim/count;
-		  
- 		   }
+	   double overallSimilarity=indSim/userProfile.size();
+		   singleBook.setSimilarity(overallSimilarity);
+    }
     
     }
     public void getCosineSimilarityMy(List<Book> BookData,List<Movie> userProfile) {
@@ -250,21 +262,22 @@ public void parseUserProfile(List<Movie> userProfile) throws FileNotFoundExcepti
     		count=0;
     		overallSimilarityGenre=0.0;
         	overallSimilarityAuthor=0.0;
-
+            double overallSimilarity=0.0;
     		for(Movie j:userProfile){
     			count++;
      				
-    			overallSimilarityGenre+=new CosineSimilarity().cosineSimilarity(m.getTfVector(),j.getTfVector());
-                	overallSimilarityAuthor+=new CosineSimilarity().cosineSimilarity(m.getTfVectorAuthor(),j.getTfVectorAuthor());
+    			overallSimilarityGenre=new CosineSimilarity().cosineSimilarity(m.getTfVector(),j.getTfVector());
+                	overallSimilarityAuthor=new CosineSimilarity().cosineSimilarity(m.getTfVectorAuthor(),j.getTfVectorAuthor());
                 	if(Double.isNaN(overallSimilarityGenre))
             			overallSimilarityGenre=0.0;
         			if(Double.isNaN(overallSimilarityAuthor))
             			overallSimilarityAuthor=0.0;
+        			overallSimilarity+=(0.5*(overallSimilarityAuthor)+(0.5*overallSimilarityGenre))*0.5;
     				
     			 
     		}
     		
-    		m.setSimilarity((overallSimilarityGenre)/count);
+    		m.setSimilarity((overallSimilarityGenre)/userProfile.size());
     		
      
     }
