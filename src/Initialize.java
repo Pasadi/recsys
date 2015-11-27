@@ -19,7 +19,7 @@ public class Initialize {
 	public static List<Book> bookData=new ArrayList<>();
     public static	Map<String,Integer> popularity=new HashMap<>();
     
-
+    public static	Map<String,Integer> novelty=new HashMap<>();
 	/**
 	 * @param args
 	 * @throws IOException 
@@ -28,6 +28,7 @@ public class Initialize {
 		// TODO Auto-generated method stub
 		parseMapBook();
 		popularityMap();
+		noveltyMap();
 		File f=new File("similar_user_movies.txt");
 		FileReader fr=new FileReader(f.getAbsolutePath());
 		List<Book> recs=new ArrayList<>();
@@ -158,6 +159,20 @@ public class Initialize {
 		while((s=br.readLine())!=null){
 			String[]arr=s.split("	");
 			popularity.put(arr[0], Integer.parseInt(arr[1]));
+		  //  System.out.println("~~~~~~~~~~~~~~~~~~~"+popularity.get(arr[0]));
+	}
+		br.close();
+		fd.close();
+		}
+	public static void noveltyMap() throws NumberFormatException, IOException{
+		File f=new File("Training_Popularity.txt");
+		FileReader fd=new FileReader(f);
+		BufferedReader br=new BufferedReader(fd);
+		String s;
+		
+		while((s=br.readLine())!=null){
+			String[]arr=s.split("	");
+			novelty.put(arr[0], Integer.parseInt(arr[1]));
 		  //  System.out.println("~~~~~~~~~~~~~~~~~~~"+popularity.get(arr[0]));
 	}
 		br.close();

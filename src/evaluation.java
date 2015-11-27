@@ -68,7 +68,7 @@ public static void test(List<Book> recs, String userid) throws IOException{
 		System.out.println("F1 Score: "+F1);
 		f_score.add(F1);
 	} 
-	File fd=new File("Cosine_fscore.txt");
+	File fd=new File("fscore_1.txt");
 	if(!fd.exists()){
 		fd.createNewFile();
 	}
@@ -80,7 +80,32 @@ public static void test(List<Book> recs, String userid) throws IOException{
 	bw.newLine();
 	bw.close();
 	fw.close();
-
+double popularity;
+double overallPopularity;
+double totalPopulrity=0.0;
+	for(Book b:recs){
+			if(Initialize.novelty.containsKey(b.id)){
+				popularity=Initialize.novelty.get(b.id)+1;
+			}
+			else{
+				popularity=1.0;
+			}
+			overallPopularity=popularity/239;
+			Double logval=Math.log(overallPopularity)/Math.log(2);
+		   totalPopulrity+=(overallPopularity*logval);
+		   			}
+	totalPopulrity=(-1)*totalPopulrity;
+	  fd=new File("novelty.txt");
+	if(!fd.exists()){
+		fd.createNewFile();
+	}
+	  str=totalPopulrity+"";
+	  fw=new FileWriter(fd,true);
+	  bw=new BufferedWriter(fw);
 	
+	bw.write(str);
+	bw.newLine();
+	bw.close();
+	fw.close();
 }
 }

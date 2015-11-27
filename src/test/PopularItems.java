@@ -21,7 +21,7 @@ public class PopularItems {
 	 */
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		File f=new File("similar_user_books.txt");
+		File f=new File("Training_Data.txt");
 		FileReader fd=new FileReader(f);
 		BufferedReader br=new BufferedReader(fd);
 		String s;
@@ -40,7 +40,7 @@ public class PopularItems {
 		
      fd.close();
      br.close();
-     f=new File("Popularity.txt");
+     f=new File("Training_Popularity.txt");
      if(!f.exists())
     	 f.createNewFile();
      FileWriter fw=new FileWriter(f);

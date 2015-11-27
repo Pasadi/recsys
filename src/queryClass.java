@@ -38,8 +38,9 @@ public class queryClass {
 	static Map<String, ArrayList<Integer>> bookVector= new HashMap<String, ArrayList<Integer>>(10000);
 	static List<Movie> userProfile=new ArrayList<>();
 	 static List<Book> bookData=new ArrayList<>();
-	
-
+	public static List<Double> diversity=new ArrayList<>();
+public static Map<String,Integer> count=new HashMap<>();
+public static Set<String> AggregateDiversity=new HashSet<>();
 public queryClass() throws FileNotFoundException{
 	System.out.println("constructor");
 	
@@ -191,15 +192,32 @@ if(element.equals("literature")||element.equals("drama film")||element.equals("d
 	    bs.parseUserProfile(userProfile);
 	   bookData= Initialize.bookData;
  	 
-      bs.tfIdfCalculator(bookData);
-	   bs.getCosineSimilarityMy(bookData, userProfile);
-	//  bs.jaccard(bookData, userProfile);
+
+	 bs.jaccard(bookData, userProfile);
 	   List<Book> Recommendations=new ArrayList<>();
 	 Recommendations=  createUserProfile(bookData);
+   
 	
 //	  
 //		 
+	 for(Book b:Recommendations){
+		 if(b.id!=null){
+			AggregateDiversity.add(b.id);
+			
+	 }
+	 }
+	File f=new File("AverageDiversity.txt");
+     if(!f.exists())
+    	 f.createNewFile();
+     FileWriter fw=new FileWriter(f);
+     BufferedWriter bw=new BufferedWriter(fw); 
+   for( String s:AggregateDiversity ){
 	 
+	   bw.write(s);
+	   bw.newLine();
+   }
+   bw.close();
+   fw.close();
 	 return Recommendations;
  
 

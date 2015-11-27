@@ -1,7 +1,9 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -282,6 +284,49 @@ public void parseUserProfile(List<Movie> userProfile) throws FileNotFoundExcepti
      
     }
 }
+    public void getCosineSimilarity(List<Book> BookData) throws IOException {
+    	double overallSimilarityGenre=0.0,overallSimilarityAuthor=0.0,totalSimilarity=0.0;
+    	int count=0;
+    	for(Book m: BookData){
+    		m.setSimilarity(0.0);
+    		count=0;
+    		overallSimilarityGenre=0.0;
+        	overallSimilarityAuthor=0.0;
+            double overallSimilarity=0.0;
+    		for(Book j:BookData){
+    		if(m!=j){
+     				
+    			overallSimilarityGenre=new CosineSimilarity().cosineSimilarity(m.getTfVector(),j.getTfVector());
+     			overallSimilarityAuthor=new CosineSimilarity().cosineSimilarity(m.getTfVectorAuthor(),j.getTfVectorAuthor());
+ 
+    			if(Double.isNaN(overallSimilarityGenre))
+            			overallSimilarityGenre=0.0;
+        			if(Double.isNaN(overallSimilarityAuthor))
+            			overallSimilarityAuthor=0.0;
+        			overallSimilarity+=(1-(overallSimilarityGenre));
+    				System.out.println("overallSimilarity"+overallSimilarity);
+    			 
+    		}
+    		}
+    		//m.setSimilarity((overallSimilarityGenre));
+    		totalSimilarity+=overallSimilarity;
+    		
+     
+    }
+//    	totalSimilarity=totalSimilarity/2;
+//     	File f=new File("IntraListDIversity.txt");
+//        if(!f.exists())
+//       	 f.createNewFile();
+//        FileWriter fw=new FileWriter(f,true);
+//        BufferedWriter bw=new BufferedWriter(fw); 
+//      String s=totalSimilarity+"";
+//      System.out.println("ILD******************"+s);
+//   	   bw.write(s);
+//   	   bw.newLine();
+//      
+//      bw.close();
+//      fw.close();
+}
     public void jaccardTest(List<Book> bookData, List<Movie> userProfile){
   	   for(Movie m:userProfile){
   		 
@@ -315,4 +360,5 @@ public void parseUserProfile(List<Movie> userProfile) throws FileNotFoundExcepti
    		   }
        
      }
+    
 }
